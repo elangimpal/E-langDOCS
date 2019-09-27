@@ -91,7 +91,7 @@
 					<form class="intro-newslatter">
 						<input type="text" placeholder="Cari barang" style="margin-left:31%;text-align: center;">
                         <a href="cari.html"><button type="button" class="btn btn-basic" style="background-color: tan;margin-top: -45px;height:53px;margin-left: -15px;">Cari</button></a>
-                       <a href="<?= site_url("formHilang_controller")?>"><button type="button" class="site-btn" id="lost">Saya kehilangan sesuatu</button></a> 
+                       <a href=""><button type="button" class="site-btn" id="lost">Saya kehilangan sesuatu</button></a> 
 						<button type="button" data-toggle="modal" data-target="" class="site-btn" id="found" style="margin-left: 90px;">Saya menemukan sesuatu</button>
 					</form>
 				</div>
