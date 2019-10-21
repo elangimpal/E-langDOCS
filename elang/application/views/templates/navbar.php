@@ -12,6 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <!-- CSS SENDIRI -->
+  <link href="img/elang.ico" rel="shortcut icon" />
   <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/style.css">
 
 </head>
@@ -38,7 +39,7 @@
                     <b>Shahnaz</b>
                 </a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Edit Profil</a>
+                    <a class="dropdown-item" href="<?= base_url('index.php/Profile')?>">Edit Profil</a>
                     <a class="dropdown-item" href="<?= base_url('index.php/Home')?>">Keluar</a>
                 </div>
                 </li>

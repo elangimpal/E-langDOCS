@@ -73,8 +73,7 @@ body{
 	padding: 20px;
 }
 
-/* main */
-
+/* main notif-history */
 .txt{
 	text-align: center;
 	color: #11212E;
@@ -109,5 +108,74 @@ body{
 }
 
 .tabel{
-	padding-top: 90px;
+	padding-top: 60px;
 }
+
+.fontc-of{
+	color: #90A0B7;
+  }
+
+.fontt-landing-of{
+	font-size: 40px;
+}
+
+.alert-of{
+	height: 70px;
+  }
+
+.font14-of{
+	font-size: 14px;
+}
+
+.userimg-of{
+	width: 35px;
+	height: 35px;
+	border-radius: 100px;
+}
+
+.fontc-3-of{
+	color: #707683;
+}
+
+/* main - dash */
+.cari{
+	position: absolute;
+	margin-top: 105px;
+	margin-left: 720px;
+}
+
+.txt2{
+	position: absolute;
+	margin: 120px;
+	margin-left:90px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.img2{
+	position: absolute;
+	margin: 20px;
+	margin-left: 240px;
+	margin-bottom: 20px;
+	padding-bottom: 50px;
+}
+
+.img3{
+	position: absolute;
+	margin: 20px;
+	margin-left: 250px;
+	margin-bottom: 20px;
+	padding-bottom: 50px;
+}
+
+.txt3{
+	position: absolute;
+	margin: 120px;
+	margin-left:110px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+
+
+

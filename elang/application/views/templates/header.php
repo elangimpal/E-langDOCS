@@ -12,6 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <!-- CSS SENDIRI -->
+  <link href="img/elang.ico" rel="shortcut icon" />
   <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/header.css">
   
 
@@ -36,7 +37,7 @@
             <a class="nav-link" href="#" style="color:white"><b>DAFTAR</b></a>
         </li>
         <li class="nav-item items">
-            <a class="nav-link" href="<?= base_url('index.php/Notifikasi')?>" style="color:white"><b>MASUK</b></a>
+            <a class="nav-link" href="<?= base_url('index.php/Dashboard')?>" style="color:white"><b>MASUK</b></a>
         </li>
         <li class="nav-item items">
             <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>

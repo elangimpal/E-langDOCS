@@ -8,6 +8,7 @@
             <div class="profile">
                 <h5>LAMAN PROFILE</h5>
             </div>
+            <a href="<?= base_url('index.php/Dashboard')?>">Dashboard</a>
             <a href="<?= base_url('index.php/Notifikasi')?>">Notifikasi</a>
             <a href="<?= base_url('index.php/BarangHilang')?>">Barang Hilang</a>
             <a href="<?= base_url('index.php/BarangDitemukan')?>" style="color:white"><b>Barang Ditemukan</b></a>
@@ -20,24 +21,16 @@
                 <div class="txt">
                     <h2>Barang Ditemukan</h2>
                 </div>
-                <div class="d-flex detailprof">
-                    <div class="txt">
-                        <h4>Shahnaz Nur Asyifa</h4>
-                        <img src="<?= base_url('assets/img/profile.png')?>">
-                    </div>
-                </div>
             </div>
 
             <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-10 tabel">
                         <form action="">
-                            <table class="table table-striped">
+                            <table class="table table-hover">
                                 <thead>
                                     <tr>
-                                        <th>
-                                            <input type="checkbox" name="vehicle1" value="semua"> Nama Barang
-                                        </th>
+                                        <th>Nama Barang</th>
                                         <th>Kategori</th>
                                         <th>Lokasi</th>
                                         <th>Tanggal</th>
@@ -46,58 +39,25 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> Modul APPL
-                                        </td>
+                                        <td>Modul APPL</td>
                                         <td>Buku</td>
                                         <td>LABIF 03</td>
                                         <td>01 - 03 - 2019</td>
                                         <td style="color:green">DIKLAIM</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike">
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>HP Samsung A10s</td>
+                                        <td>Gadget</td>
+                                        <td>MSU</td>
+                                        <td>10 - 02 - 2019</td>
+                                        <td style="color:green">DIKLAIM</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> 
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> 
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> 
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> 
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>Dompet</td>
+                                        <td>Lain-lain</td>
+                                        <td>GKU</td>
+                                        <td>05 - 01 - 2019</td>
+                                        <td style="color:green">DIKLAIM</td>
                                     </tr>
                                 </tbody>
                             </table>

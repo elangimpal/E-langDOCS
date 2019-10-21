@@ -8,6 +8,7 @@
             <div class="profile">
                 <h5>LAMAN PROFILE</h5>
             </div>
+            <a href="<?= base_url('index.php/Dashboard')?>">Dashboard</a>
             <a href="<?= base_url('index.php/Notifikasi')?>">Notifikasi</a>
             <a href="<?= base_url('index.php/BarangHilang')?>" style="color:white"><b>Barang Hilang</b></a>
             <a href="<?= base_url('index.php/BarangDitemukan')?>">Barang Ditemukan</a>
@@ -20,24 +21,16 @@
                 <div class="txt">
                     <h2>Barang Hilang</h2>
                 </div>
-                <div class="d-flex detailprof">
-                    <div class="txt">
-                        <h4>Shahnaz Nur Asyifa</h4>
-                        <img src="<?= base_url('assets/img/profile.png')?>">
-                    </div>
-                </div>
             </div>
 
             <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-10 tabel">
                         <form action="">
-                            <table class="table table-striped">
+                            <table class="table table-hover">
                                 <thead>
                                     <tr>
-                                        <th>
-                                            <input type="checkbox" name="vehicle1" value="semua"> Nama Barang
-                                        </th>
+                                        <th>Nama Barang</th>
                                         <th>Kategori</th>
                                         <th>Lokasi</th>
                                         <th>Tanggal</th>
@@ -46,59 +39,19 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> KTM
-                                        </td>
+                                        <td>KTM</td>
                                         <td>Kartu</td>
                                         <td>Situ techno</td>
                                         <td>16 - 02 - 2019</td>
-                                        <td style="color:red">Hilang</td>
+                                        <td style="color:red">HILANG</td>
                                         
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike">
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> 
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> 
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> 
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> 
-                                        </td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>Binder</td>
+                                        <td>Buku</td>
+                                        <td>Kantin Teknik</td>
+                                        <td>01 - 01 - 2019</td>
+                                        <td style="color:green">DITEMUKAN</td>
                                     </tr>
                                 </tbody>
                             </table>
