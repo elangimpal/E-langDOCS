@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<title>Detail Barang</title>
+  	<title>verifikasi barang ditemukan sukses</title>
 
   	<!-- Favicon -->
   	<link href="img/favicon.ico" rel="shortcut icon"/>
@@ -40,16 +40,16 @@
     .bg-elang{
       background-color: #E5E5E5;
     }
-    .hg-elang{
-      height: 650px;
+    .hg2-elang{
+      height: 690px;
     }
-    .btn1-elang{
-      background-color: #EC393B;
+    .btn2-elang{
+      background-color: #11212E;
     }
 
   </style>
   <body>
-    <div class="bg-elang hg-elang">
+    <div class="bg-elang hg2-elang">
       <div class="container pt-5 col-7 text-body" style="font-family: 'Roboto', sans-serif;">
         <div class="row p-4 shadow-lg  bg-white rounded">
           <div class="col-12">
@@ -57,10 +57,6 @@
               <div class="col-4">
                 <div class="pl-3">
                   <img  src="<?= base_url('assets/img/ktmh_c.png')?>" class="ktm-size ml-1">
-                </div>
-                <div class="mt-4">
-                  <a style="font-size : 13px;">Bagikan ke</a><br>
-                  <span><img src="<?= base_url('assets/icon/i-ig.svg')?>" class="mr-2"><img src="<?= base_url('assets/icon/i-fb.svg')?>" class="mr-2"><img src="<?= base_url('assets/icon/i-twitter.svg')?>" class="mr-2"><img src="<?= base_url('assets/icon/i-googleplus.svg')?>" class="mr-2"></span>
                 </div>
               </div>
               <div class="col-8">
@@ -77,28 +73,39 @@
                   <a class="font-weight-bold" style="font-size : 14px;">DESKRIPSI</a><br>
                   <a style="font-size : 13px;">Kehilangan KTM sekitar pukul 16:30 setelah kelas Kalkulus IIB. Kemungkinan lokasi hilang di bangku-bangku bagian belakang. Terdapat strap berwarna kuning dengan motif pisang.</a><br>
                </div>
-               <div class="mt-3">
-                  <a class="font-weight-bold" style="font-size : 14px;">DETAIL</a><br>
-                  <div class="row">
-                    <div class="col-8" style="font-size : 13px;">
-                      <a>Ciri-Ciri:</a><br>
-                      <li>Tempat kartu berwarna kuning</li>
-                      <li>Tidak terdapat coretan</li>
-                      <li>Masih menggunakan tinta nyata</li>
-                    </div>
-                    <!-- <div class="col-4" style="font-size : 13px;">
-                      <a>Hilang Tanggal</a><br>
-                      <a>2 Oktober 2019</a><br>
-                    </div> -->
-                  </div>
               </div>
-                <button type="button" class="btn btn1-elang mt-4 btn-md btn-block text-white shadow" href="#">SAYA MENEMUKANNYA</button>
-                <!-- href="<?= base_url('index.php/verifikasiBarangD')?>" -->
+            </div>
+            <div class="row">
+              <div class="pl-3 mt-3 col-8" style="font-size : 13px;">
+                E-LANG telah mengirimkan notifikasi kepada user. Kami telah mengirimkan
+                contact info anda kepada yang bersangkutan. Berikut adalah contact info
+                pemilik barang yang anda dapat hubungi .
               </div>
+            </div>
+            <div class="row">
+              <div class="col-4 mt-3">
+                <a class="font-weight-bold" style="font-size : 14px;">DESKRIPSI</a><br>
+                <a style="font-size : 13px;">Nama : <span>Ciara</span></a><br>
+                <a style="font-size : 13px;">No HP : <span>08123321456</span></a><br>
+              </div>
+              <div class="col-8">
               </div>
             </div>
           </div>
         </div>
+      <!-- </div> -->
+      <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col-8">
+          <div class="mt-4 mb-2">
+            <a class="font-weight-bold" style="font-size : 17px;">TERIMA KASIH TELAH BEKERJA SAMA DENGAN KAMI</a><br>
+          </div>
+          <button type="button" class="btn btn2-elang btn-md btn-block text-white shadow">KEMBALI KE BERANDA</button>
+        </div>
+        <div class="col-2">
+        </div>
+      </div>
     </div>
     </div>
 

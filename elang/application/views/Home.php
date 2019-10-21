@@ -5,5 +5,5 @@
         <img src="<?= base_url('assets/img/bg.jpg')?>" alt="">
     </div>
 
-    
+
 </body>
