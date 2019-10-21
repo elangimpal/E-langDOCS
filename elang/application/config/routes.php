@@ -54,5 +54,6 @@ $route['Home'] = 'Home_controller';
 $route['Notifikasi'] = 'Notifikasi_controller';
 $route['BarangHilang'] = 'Barangh_controller';
 $route['BarangDitemukan'] = 'Barangd_controller';
+$route['Profile'] = 'Profile_controller';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

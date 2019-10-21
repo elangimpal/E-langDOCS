@@ -33,7 +33,7 @@
                 <div class="col-sm-10 tabel">
                     <div class="table-responsive">
                         <form action="">
-                            <table class="table table-striped">
+                            <table class="table table-hover">
                                 <thead>
                                     <tr>
                                         <th>
