@@ -32,7 +32,7 @@
 
     <ul class="navbar-nav nav-right">
         <li class="nav-item items">
-            <a class="nav-link" href="#" style="color:white"><b>DAFTAR</b></a>
+            <a class="nav-link" href="<?= base_url('index.php/verifikasiBarangDS')?>" style="color:white"><b>DAFTAR</b></a>
         </li>
         <li class="nav-item items">
             <a class="nav-link" href="<?= base_url('index.php/Notifikasi')?>" style="color:white"><b>MASUK</b></a>

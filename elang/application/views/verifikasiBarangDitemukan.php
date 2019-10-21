@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<title>Detail Barang</title>
+  	<title>verifikasi Barang Ditemukan</title>
 
   	<!-- Favicon -->
   	<link href="img/favicon.ico" rel="shortcut icon"/>
@@ -29,6 +29,7 @@
 
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   </head>
+
   <style>
     .i-size{
       width: 20px;
@@ -48,6 +49,7 @@
     }
 
   </style>
+
   <body>
     <div class="bg-elang hg-elang">
       <div class="container pt-5 col-7 text-body" style="font-family: 'Roboto', sans-serif;">
@@ -57,10 +59,6 @@
               <div class="col-4">
                 <div class="pl-3">
                   <img  src="<?= base_url('assets/img/ktmh_c.png')?>" class="ktm-size ml-1">
-                </div>
-                <div class="mt-4">
-                  <a style="font-size : 13px;">Bagikan ke</a><br>
-                  <span><img src="<?= base_url('assets/icon/i-ig.svg')?>" class="mr-2"><img src="<?= base_url('assets/icon/i-fb.svg')?>" class="mr-2"><img src="<?= base_url('assets/icon/i-twitter.svg')?>" class="mr-2"><img src="<?= base_url('assets/icon/i-googleplus.svg')?>" class="mr-2"></span>
                 </div>
               </div>
               <div class="col-8">
@@ -78,29 +76,33 @@
                   <a style="font-size : 13px;">Kehilangan KTM sekitar pukul 16:30 setelah kelas Kalkulus IIB. Kemungkinan lokasi hilang di bangku-bangku bagian belakang. Terdapat strap berwarna kuning dengan motif pisang.</a><br>
                </div>
                <div class="mt-3">
-                  <a class="font-weight-bold" style="font-size : 14px;">DETAIL</a><br>
-                  <div class="row">
-                    <div class="col-8" style="font-size : 13px;">
-                      <a>Ciri-Ciri:</a><br>
-                      <li>Tempat kartu berwarna kuning</li>
-                      <li>Tidak terdapat coretan</li>
-                      <li>Masih menggunakan tinta nyata</li>
-                    </div>
-                    <!-- <div class="col-4" style="font-size : 13px;">
-                      <a>Hilang Tanggal</a><br>
-                      <a>2 Oktober 2019</a><br>
-                    </div> -->
+                  <a class="font-weight-bold font-italic" style="font-size : 14px;">PERHATIKAN KOTAK KUNING YANG MENUTUPI KOMPONEN DALAM FOTO BARANG</a><br>
+              </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="pl-3 mt-3 " style="font-size : 13px;">
+                Masukkan nilai dari komponen tersebut dibawah ini untuk verifikasi penemuan barang
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control col-4 bg-light border border-dark" style="font-size : 13px;">
+                    <label style="font-size : 11px;">Petunjuk: NIM</label>
                   </div>
+                </form>
               </div>
-                <button type="button" class="btn btn1-elang mt-4 btn-md btn-block text-white shadow" href="#">SAYA MENEMUKANNYA</button>
-                <!-- href="<?= base_url('index.php/verifikasiBarangD')?>" -->
+            </div>
+            <div class="row">
+              <div class="col-4">
               </div>
+              <div class="col-8">
+                <button type="button" class="btn btn1-elang btn-md btn-block text-white shadow">SAYA MENEMUKANNYA</button>
               </div>
             </div>
           </div>
         </div>
     </div>
     </div>
+
 
     <!--====== Javascripts & Jquery ======-->
     <script src="js/jquery.js" type="text/javascript"></script>
