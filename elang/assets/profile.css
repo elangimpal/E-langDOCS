@@ -9,7 +9,6 @@
 
 ul {
     list-style-type: none;
-    /* font-family: 'Quicksand', sans-serif; */
 }
 
 .boxed:not([class*='bg-']) {
@@ -29,6 +28,11 @@ ul {
     position: relative;
     overflow: hidden;
     padding: 1.85714286em;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     /* background: rgb(226, 218, 218); */
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15); border-radius: 30px;
+}
+
+.form-control{
+    margin-left: 1%;
 }

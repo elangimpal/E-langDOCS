@@ -1,3 +1,5 @@
+<?php $this->load->view('templates/navbar') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +11,6 @@
     <!-- Stylesheets -->
 
     <link rel="stylesheet" href="assets/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/owl.carousel.css">
     <link rel="stylesheet" href="assets/profile.css">
 
     <!-- Favicon -->
@@ -30,42 +30,27 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-
 </head>
 
 <body>
-    <!-- Header section -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#"> <img src="https://www.flaticon.com/premium-icon/icons/svg/448/448270.svg" alt="" style="width:40px; height:40px;margin-right:20px;"><b>E-LANG</b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <form class="my-2 my-lg-0">
-                <div class="dropdown" style="margin-left:-90px;margin-bottom: -37px;">
-                    <button type="button" class="btn btn-dark dropdown-toggle " data-toggle="modal" data-target="#exampleModa3">MASUK</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Edit Profil</a>
-                        <a class="dropdown-item" href="#">Keluar</a>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-dark">FAQ</button>
-            </form>
+    <div class="sidenav">
+        <div class="profile">
+            <h5>LAMAN PROFILE</h5>
         </div>
-    </nav>
-    <!-- Header section end -->
+        <a href="<?= base_url('index.php/Notifikasi') ?>" style="color:white"><b>Notifikasi</b></a>
+        <a href="<?= base_url('index.php/BarangHilang') ?>">Barang Hilang</a>
+        <a href="<?= base_url('index.php/BarangDitemukan') ?>">Barang Ditemukan</a>
+        <a href="<?= base_url('index.php/Profile') ?>">Pengaturan</a>
+    </div>
 
-    <div class="container" style="margin-top: 10%;">
+    <div class="container" style="margin-top: 5%; margin-left: 25%;">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-" style="width: 250px;">
                 <div class="boxed boxed--lg boxed--border" style="box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15); border-radius: 30px;">
                     <div class="text-block text-center">
-                        <img class="img-circle" alt="avatar" src="img/profile/profile-pic.jpg" class="image-sm" style="width: 100px;  border-radius: 50%;">
+                        <img src="<?= base_url('assets/img/profile/profile-pic.jpg')?>" alt="" style="width: 50px;">
                         <h5 style="margin-top: 5%; color: cadetblue;">sadakosan</h5>
-                        <span>Sadako bin Masako</span>
+                        <span>Sadako bin Masako</span><br>
                     </div>
                     <hr>
                     <div class="text-block">
@@ -79,13 +64,26 @@
                             <li>
                                 <a href="#" class="">Hapus Akun</a>
                             </li>
-                        </ul>
+                        </ul> 
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-" style="width: 500px;  margin-left: 25%;">
                 <div class="boxed boxed--lg boxed--border" style="box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15); border-radius: 30px;">
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <div class="form-group">
+                        <h2>Profil</h2><br>
+                        <div class="form-area" style="margin-left: 2%">
+                            <label>Nama</label>
+                            <input type="text" class="form-control" id="nama" name="nama" value="Nama"><br>
+                            <label>Email</label>
+                            <input type="text" class="form-control" id="email" name="email" value="Email"><br>
+                            <label>No. Ponsel</label>
+                            <input type="text" class="form-control" id="noPonsel" name="noPonsel" value="No. Ponsel"><br>
+                            <label>Alamat</label>
+                            <input type="text" class="form-control" id="alamat" name="alamat" value="Alamat"><br>
+                        </div>
+                        <button id="btnSave" type="submit" class="btn btn-primary" style="margin-left: 80%; margin-top: 5%">Update Profil</button>
+                    </div>
                 </div>
             </div>
         </div>

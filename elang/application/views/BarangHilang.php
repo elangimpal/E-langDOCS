@@ -11,7 +11,7 @@
             <a href="<?= base_url('index.php/Notifikasi')?>">Notifikasi</a>
             <a href="<?= base_url('index.php/BarangHilang')?>" style="color:white"><b>Barang Hilang</b></a>
             <a href="<?= base_url('index.php/BarangDitemukan')?>">Barang Ditemukan</a>
-            <a href="#clients">Pengaturan</a>
+            <a href="<?= base_url('index.php/Profile') ?>">Pengaturan</a>
         </div>
 
         <!-- ini main/body -->

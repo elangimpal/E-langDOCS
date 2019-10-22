@@ -1,5 +1,5 @@
 <!-- manggil navbar -->
-<?php $this->load->view('templates/navbar')?>
+<?php $this->load->view('templates/navbar') ?>
 
 <body>
     <div class="container">
@@ -8,10 +8,10 @@
             <div class="profile">
                 <h5>LAMAN PROFILE</h5>
             </div>
-            <a href="<?= base_url('index.php/Notifikasi')?>" style="color:white"><b>Notifikasi</b></a>
-            <a href="<?= base_url('index.php/BarangHilang')?>">Barang Hilang</a>
-            <a href="<?= base_url('index.php/BarangDitemukan')?>">Barang Ditemukan</a>
-            <a href="#clients">Pengaturan</a>
+            <a href="<?= base_url('index.php/Notifikasi') ?>" style="color:white"><b>Notifikasi</b></a>
+            <a href="<?= base_url('index.php/BarangHilang') ?>">Barang Hilang</a>
+            <a href="<?= base_url('index.php/BarangDitemukan') ?>">Barang Ditemukan</a>
+            <a href="<?= base_url('index.php/Profile') ?>">Pengaturan</a>
         </div>
 
         <!-- ini main/body -->
@@ -23,7 +23,7 @@
                 <div class="d-flex detailprof">
                     <div class="txt">
                         <h4>Shahnaz Nur Asyifa</h4>
-                        <img src="<?= base_url('assets/img/profile.png')?>">
+                        <img src="<?= base_url('assets/img/profile.png') ?>">
                     </div>
                 </div>
             </div>
@@ -54,36 +54,36 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> 
+                                            <input type="checkbox" name="vehicle1" value="Bike">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> 
+                                            <input type="checkbox" name="vehicle1" value="Bike">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> 
+                                            <input type="checkbox" name="vehicle1" value="Bike">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" name="vehicle1" value="Bike"> 
+                                            <input type="checkbox" name="vehicle1" value="Bike">
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </form>
                     </div>
-                    
+
                 </div>
-                
+
             </div>
 
         </div>
-            
 
-        </div>
+
+    </div>
     </div>
 </body>

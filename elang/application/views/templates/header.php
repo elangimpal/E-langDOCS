@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:#11212E">
     <!-- Brand -->
     <a class="navbar-brand" href="#">
-        <img src="<?= base_url('assets/img/logo.png')?>" alt="">
+        <img src="<?= base_url('assets/img/elang.ico')?>" alt="" style="width:40px;height:40px;">
     </a>
 
     <!-- Links -->
