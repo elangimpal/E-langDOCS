@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/font-awesome.min.css">
     <link rel="stylesheet" href="assets/owl.carousel.css">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/button-file.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/assets/button-file.css">
 
 
     <!-- Latest compiled and minified CSS -->
@@ -36,38 +36,49 @@
 </head>
 <body>
     <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
+  
 
      <!-- Header section -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#"> <img src="https://portal.merauke.go.id/files/momo.png" alt="" style="width:25px; height:25px;margin-right:20px;"><b>E-LANG</b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <form class="my-2 my-lg-0">
-            <div class="dropdown" style="margin-left:-90px;margin-bottom: -37px;">
-                <button type="button" class="btn btn-dark dropdown-toggle " data-toggle="modal" data-target="#exampleModa3">shahnaz</button>
+     <nav class="navbar navbar-expand-sm navbar-dark navbar-dd" style="background-color:#11212E">
+        <!-- Brand -->
+        <a class="navbar-brand" href="">
+            <img src="<?= base_url('assets/img/logo.png')?>" alt="">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="font-size:18px; color:white"><b>E-LANG</b></a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav nav-right">
+            <li class="nav-item items li-dede" id="">
+                <!-- Dropdown -->
+                <li class="nav-item dropdown li-dede">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white">
+                    <b>Shahnaz</b>
+                </a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Edit Profil</a>
-                    <a class="dropdown-item" href="#">Keluar</a>
+                    <a class="dropdown-item" href="<?= base_url('index.php/Home')?>">Keluar</a>
                 </div>
-            </div>
-		   <button type="button" class="btn btn-dark">FAQ</button>
-          </form>
-        </div>  
+                </li>
+            </li>
+            <li class="nav-item items li-dede">
+                <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>
+            </li>
+        </ul>
+
     </nav>
     <!-- Header section end -->
-    <div class="hero-section set-bg" data-setbg="img/bg-1.png">
-
-        <div class="container p-5 col-8">
+    <!-- <div class="hero-section set-bg" data-setbg="img/bg-1.png"> -->
+    <div class="isi">
+    <div class="container p-5 col-8">
             <form action="/action_page.php">
                 <div class="row">
                     <div class="col-25 media">
-                        <img id="image1"src="img/bg-1.png" class="img">
+                        <img id="image1"src="<?= base_url('assets/img/logo.png')?>" class="img" alt="Gambar">
                     </div>
                     <div class="col-75 media-body">
                         <label for="imgInp">Gambar</label>
@@ -163,12 +174,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <input type="submit" value="Simpan">
+                    <input class="btnSub"type="submit" value="Simpan">
                 </div>
             </form>
         </div>
-
     </div>
+        
+
+    <!-- </div> -->
 
     <!--====== Javascripts & Jquery ======-->
     <script src="js/jquery.js" type="text/javascript"></script>
@@ -179,7 +192,7 @@
     <script src="assets/js/circle-progress.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/button-file.js"></script>
+    <script type="text/javascript" src="<?= base_url(); ?>assets/js/button-file.js"></script>
     <script type="text/javascript">
         
     </script>
