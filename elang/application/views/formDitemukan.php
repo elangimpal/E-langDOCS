@@ -60,7 +60,7 @@
         <div class="main">
             <div class="d-flex" style="width:900px; height:130px; margin-left:390px; margin-top:60px">
                 <div class="txt">
-                    <h2>Input Kehilangan Barang</h2>
+                    <h2>Input Penemuan Barang</h2>
                 </div>
             </div>
 

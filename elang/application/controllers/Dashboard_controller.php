@@ -1,10 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Profile_controller extends CI_Controller {
+class Dashboard_controller extends CI_Controller {
 
-<<<<<<< HEAD
-=======
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,9 +18,8 @@ class Profile_controller extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
->>>>>>> ee28dc2c75f056a6d2d1a5ae9a26a3eedcbc9c38
 	public function index()
 	{
-		$this->load->view('Profile');
+		$this->load->view('Dashboard');
 	}
 }

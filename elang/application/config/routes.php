@@ -51,9 +51,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'Home_controller';
 $route['Home'] = 'Home_controller';
+$route['Dashboard'] = 'Dashboard_controller';
 $route['Notifikasi'] = 'Notifikasi_controller';
 $route['BarangHilang'] = 'Barangh_controller';
 $route['BarangDitemukan'] = 'Barangd_controller';
+$route['formHilang'] = 'formHilang_controller';
+$route['SearchResult'] = 'searchResult_controller';
+$route['formDitemukan'] = 'formDitemukan_controller';
+$route['detailBarang'] = 'detailBarang_controller';
+$route['verifikasiBarangD'] = 'detailBarang_controller/verifikasiBarangD';
+$route['verifikasiBarangDS'] = 'detailBarang_controller/verifikasiBarangDS';
 $route['Profile'] = 'Profile_controller';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
