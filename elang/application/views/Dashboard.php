@@ -5,17 +5,7 @@
 <body>
     <div class="container">
         <!-- ini side bar -->
-        <div class="sidenav">
-            <div class="profile">
-                <h5>LAMAN PROFILE</h5>
-            </div>
-
-            <a href="<?= base_url('index.php/Dashboard')?>" style="color:white"><b>Dashboard</b></a>
-            <a href="<?= base_url('index.php/Notifikasi')?>">Notifikasi</a>
-            <a href="<?= base_url('index.php/BarangHilang')?>">Barang Hilang</a>
-            <a href="<?= base_url('index.php/BarangDitemukan')?>">Barang Ditemukan</a>
-            <a href="<?= base_url('index.php/Profile')?>">Pengaturan</a>
-        </div>
+        <?php $this->load->view('templates/sidebar')?>
 
         <!-- ini main/body -->
         <div class="main">

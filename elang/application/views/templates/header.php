@@ -18,30 +18,30 @@
 
 </head>
 <body>
+    <!-- navbar fixed top -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#11212E">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="<?= base_url('assets/img/logo.png')?>" alt="logo" style="width:40px;">
+        </a>
+        
+        <!-- Links -->
+        <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-size:18px; color:white"><b>E-LANG</b></a>
+                    </li>
+                </ul>
 
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:#11212E">
-    <!-- Brand -->
-    <a class="navbar-brand" href="#">
-        <img src="<?= base_url('assets/img/logo.png')?>" alt="">
-    </a>
-
-    <!-- Links -->
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="#" style="font-size:18px; color:white"><b>E-LANG</b></a>
-        </li>
-    </ul>
-
-    <ul class="navbar-nav nav-right">
-        <li class="nav-item items">
-            <a class="nav-link" href="<?= base_url('index.php/verifikasiBarangDS')?>" style="color:white"><b>DAFTAR</b></a>
-        </li>
-        <li class="nav-item items">
-            <a class="nav-link" href="<?= base_url('index.php/Dashboard')?>" style="color:white"><b>MASUK</b></a>
-        </li>
-        <li class="nav-item items">
-            <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>
-        </li>
-    </ul>
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item items">
+                        <a class="nav-link" href="<?= base_url('index.php/verifikasiBarangDS')?>" style="color:white"><b>DAFTAR</b></a>
+                    </li>
+                    <li class="nav-item items">
+                        <a class="nav-link" href="<?= base_url('index.php/Dashboard')?>" style="color:white"><b>MASUK</b></a>
+                    </li>
+                    <li class="nav-item items">
+                        <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>
+                    </li>
+                </ul>
 
     </nav>

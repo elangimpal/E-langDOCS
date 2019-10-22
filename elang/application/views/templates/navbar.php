@@ -18,35 +18,35 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark navbar-dd" style="background-color:#11212E">
-        <!-- Brand -->
-        <a class="navbar-brand" href="">
-            <img src="<?= base_url('assets/img/logo.png')?>" alt="">
+    <!-- navbar fixed top -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#11212E">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="<?= base_url('assets/img/logo.png')?>" alt="logo" style="width:40px;">
         </a>
-
+        
         <!-- Links -->
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="font-size:18px; color:white"><b>E-LANG</b></a>
-            </li>
-        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-size:18px; color:white"><b>E-LANG</b></a>
+                    </li>
+                </ul>
 
-        <ul class="navbar-nav nav-right">
-            <li class="nav-item items">
-                <!-- Dropdown -->
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white">
-                    <b>Shahnaz</b>
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="<?= base_url('index.php/Profile')?>">Edit Profil</a>
-                    <a class="dropdown-item" href="<?= base_url('index.php/Home')?>">Keluar</a>
-                </div>
-                </li>
-            </li>
-            <li class="nav-item items">
-                <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>
-            </li>
-        </ul>
-
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item items">
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white">
+                            <b>Shahnaz</b>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="<?= base_url('index.php/Profile')?>">Edit Profil</a>
+                            <a class="dropdown-item" href="<?= base_url('index.php/Home')?>">Keluar</a>
+                        </div>
+                        </li>
+                    </li>
+                    <li class="nav-item items">
+                        <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>
+                    </li>
+            </ul>
     </nav>

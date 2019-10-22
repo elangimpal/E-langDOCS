@@ -5,6 +5,7 @@ class formHilang_controller extends CI_Controller {
 
 	public function index()
 	{
+		// $this->load->view('formHilang');
 		$this->load->view('formHilang');
 	}
 }
