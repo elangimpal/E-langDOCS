@@ -28,7 +28,7 @@ function readURL(input) {
       
       reader.readAsDataURL(input.files[0]);
     }
-  }
+  } 
   
   $("#imgInp").change(function() {
     readURL(this);
@@ -71,7 +71,7 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   lu.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("Ciri-ciri belum terisi");
   } else {
     document.getElementById("myUL").appendChild(lu);
   }

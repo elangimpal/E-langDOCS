@@ -142,6 +142,22 @@ input[type="file"] {
     }
 }
 
+/* PAGE SEARCH RES */
+.btn-lgt{
+  border-radius: 30px;
+  box-shadow: 0 0px 0px 0px rgba(0,0,0,0.2), 0px 1px 2px 1px rgba(0,0,0,0.19);
+  border: none !important;
+
+}
+
+
+
+/*  */
+
+
+
+
+
 /* NAVBAR PUNYA DEDE*/
 .navbar {
 	/* position: fixed !important; */
@@ -414,21 +430,32 @@ height: 1000px;
 }
 
 .box-of{
-  box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 1px 26px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
-  height: 100px;
-  width: 100px;
+  height: auto !important;
+  width: auto;
 }
-.row{
+/* .row{
     margin-right: 0px !important;
     margin-left: 0px !important;
     padding: 0px !important;
 
-}
+} */
 .pickantin-of{
   width : 100%;
 }
+hr{
+  margin: 20px 130px 0 350px;
+}
+.search-field{
+  margin-left:320px; margin-top: 100px; margin-right: 100px; padding-top: 20px;padding-bottom: 20px;
+}
 
+.fil{
+  background-color: #109CF1;
+  margin-left: 250px !important;
+  width: 100px !important;
+}
 .footer-of{
   background: #109CF1;
   height: 55px;

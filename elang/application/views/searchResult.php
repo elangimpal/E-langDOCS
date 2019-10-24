@@ -38,13 +38,37 @@
 </head>
 
 <body>
-    <!-- Page Preloder -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#11212E">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="<?= base_url('assets/img/logo.png') ?>" alt="logo" style="width:40px;">
+        </a>
 
-    <!-- Header section -->
-    <!-- Header section end -->
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="font-size:18px; color:white"><b>E-LANG</b></a>
+            </li>
+        </ul>
 
-    <!-- Modal -->
-
+        <ul class="navbar-nav nav-right">
+            <li class="nav-item items">
+                <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white">
+                    <b>Shahnaz</b>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="<?= base_url('index.php/Profile') ?>">Edit Profil</a>
+                    <a class="dropdown-item" href="<?= base_url('index.php/Home') ?>">Keluar</a>
+                </div>
+            </li>
+            </li>
+            <li class="nav-item items">
+                <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Hero section -->
     <div>
@@ -53,15 +77,15 @@
             <!-- filter -->
             <div class="col-4 col-push-8 p-5">
                 <div class="container" id="filter">
-                    
-                    
+
+
                     <!-- lokasi -->
                     <form action="/action_page.php">
-                    <h5>Filter</h5>
+                        <h5>Filter</h5>
                         <div class="form-inline">
                             <input class="form-control input-group my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
                             <div class="input-group-append">
-                                <span class="input-group-text" id="basic-text1"><img src="<?= base_url()?>img/zoom-out.svg" style=""></span>
+                                <span class="input-group-text" id="basic-text1"><img src="<?= base_url() ?>img/zoom-out.svg" style=""></span>
                             </div>
                         </div>
                         <div class="form-inline">
@@ -101,10 +125,7 @@
             </div>
             <!-- result -->
             <div class="col-8 col-push-4 p-5">
-                <div class="font-of">
-                    <div class="container pt-5 pr-5 pl-4">
-                        <div>
-                            <div class="row pt-4">
+            <div class="row pt-4">
                                 <div class="col-sm bg-white ml-4 box-of ">
                                     <div>
                                         <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
@@ -113,7 +134,7 @@
                                         <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
                                         <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
                                         <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url()?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Tokong Nanas
+                                            <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Tokong Nanas
                                         </span>
                                     </div>
                                 </div>
@@ -125,7 +146,7 @@
                                         <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
                                         <span class="font14-of fontc-6-of" id="status">Ditemukan </span><br>
                                         <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url()?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Panambulai
+                                            <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Panambulai
                                         </span>
                                     </div>
                                 </div>
@@ -137,112 +158,29 @@
                                         <span class="font-weight-bold font18-of" id="judul">Modul PBO</span> <br>
                                         <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
                                         <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url()?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Ged. F
-                                        
-                                        </span>
-                                    </div>
-                                </div>
-                            <div class="row pt-4">
-                            <div class="col-sm bg-white ml-4 box-of ">
-                                    <div>
-                                        <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
-                                    </div>
-                                    <div class="pt-3 pb-3">
-                                        <span class="font-weight-bold font18-of" id="judul">Kartu Bank ABC</span> <br>
-                                        <span class="font14-of fontc-6-of" id="status">Ditemukan</span><br>
-                                        <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url()?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Ged.A
-                                        
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-sm bg-white ml-4 mr-4 box-of ">
-                                    <div>
-                                        <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
-                                    </div>
-                                    <div class="pt-3 pb-3">
-                                        <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
-                                        <span class="font14-of fontc-6-of" id="status">Ditemukan</span><br>
-                                        <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url()?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Lap. Tenis Sukabirus
-                                        
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-sm bg-white ml-4 mr-4 box-of ">
-                                    <div>
-                                        <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
-                                    </div>
-                                    <div class="pt-3 pb-3">
-                                        <span class="font-weight-bold font18-of" id="judul">Dompet</span> <br>
-                                        <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
-                                        <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url()?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Kantin Teknik
-                                        
+                                            <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Ged. F
+
                                         </span>
                                     </div>
                                 </div>
                             </div>
 
-                            <!--  -->
-                            <div class="row pt-4">
-                                <div class="col-sm bg-white ml-4 mr-4 box-of ">
-                                    <div>
-                                        <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
-                                    </div>
-                                    <div class="pt-3 pb-3">
-                                        <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
-                                        <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
-                                        <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url()?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Tokong Nanas
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-sm bg-white ml-4 mr-4 box-of ">
-                                    <div>
-                                        <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
-                                    </div>
-                                    <div class="pt-3 pb-3">
-                                        <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
-                                        <span class="font14-of fontc-6-of" id="status">Ditemukan </span><br>
-                                        <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url()?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Panambulai
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-sm bg-white ml-4 mr-4 box-of ">
-                                    <div>
-                                        <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
-                                    </div>
-                                    <div class="pt-3 pb-3">
-                                        <span class="font-weight-bold font18-of" id="judul">Modul PBO</span> <br>
-                                        <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
-                                        <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url()?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Ged. F
-                                        
-                                        </span>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
                 </div>
-
-            </div>
-            <!-- </div> -->
-            <!-- </section> -->
-            <!-- Hero section end -->
+                <!-- </div> -->
+                <!-- </section> -->
+                <!-- Hero section end -->
 
 
 
-            <!--====== Javascripts & Jquery ======-->
-            <script src="js/jquery.js" type="text/javascript"></script>
-            <script src="assets/js/jquery-3.2.1.min.js"></script>
-            <script src="js/bootstrap.js" type="text/javascript"></script>
-            <script src="assets/js/bootstrap.min.js"></script>
-            <script src="assets/js/mixitup.min.js"></script>
-            <script src="assets/js/circle-progress.min.js"></script>
-            <script src="assets/js/owl.carousel.min.js"></script>
-            <script src="assets/js/main.js"></script>
+                <!--====== Javascripts & Jquery ======-->
+                <script src="js/jquery.js" type="text/javascript"></script>
+                <script src="assets/js/jquery-3.2.1.min.js"></script>
+                <script src="js/bootstrap.js" type="text/javascript"></script>
+                <script src="assets/js/bootstrap.min.js"></script>
+                <script src="assets/js/mixitup.min.js"></script>
+                <script src="assets/js/circle-progress.min.js"></script>
+                <script src="assets/js/owl.carousel.min.js"></script>
+                <script src="assets/js/main.js"></script>
 
 </body>
 
