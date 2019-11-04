@@ -36,6 +36,12 @@
 
 
 </head>
+<style>
+  .br-e{
+    border-radius: 15px;
+  }
+
+</style>
 
 <body>
     <!-- NAV -->
@@ -77,13 +83,13 @@
 
 
     <!-- SIDE BAR END -->
-    <!-- FILTER SORT  --> 
-    <div class="search-field box-of" style="margin: 100px 100px 0px 320px; padding: 20px 80px 20px 50px;">
+    <!-- FILTER SORT  -->
+    <div class="search-field shadow-sm bg-white br-e" style="margin: 100px 100px 0px 320px; padding: 20px 80px 20px 50px;">
         <form class="search-form" action="#">
             <div class="row">
             <div class="col-lg-3 col-md-6 col-xs-6" >
             <input class="form-control input-group my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
-                    
+
                 </div>
                 <div class="col-lg-2 col-md-6 col-xs-6" >
                     <select name="location" class="app-select form-control" required="">
@@ -116,24 +122,24 @@
                     </select>
                 </div>
                 <div>
-                    <button class="btn-lgt" >Search</button>
+                    <button class="btn-lgt">Search</button>
                 </div>
             </div>
         </form>
     </div>
 
-    <!-- FILTER SORT END --> 
+    <!-- FILTER SORT END -->
 <hr >
     <!-- RESULT -->
     <div class="result" style="margin: 0px 8px 20px 300px;">
         <div class="row col res">
-            <div class="col-sm bg-white ml-4 box-of " onclick="">
+            <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
                     <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
                 </div>
                 <div class="pt-3 pb-3">
                     <a href="<?= base_url('index.php/detailBarang')?>">
-                    <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>                    
+                    <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
                     </a>
                     <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
                     <span class="font14-of fontc-6-of" id="lokasi">
@@ -141,7 +147,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-sm bg-white ml-4 box-of " onclick="">
+            <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
                     <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
                 </div>
@@ -153,7 +159,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-sm bg-white  ml-4 box-of " onclick="">
+            <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
                     <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
                 </div>
@@ -171,7 +177,7 @@
     </div>
     <div class="result" style="margin: 0px 8px 20px 300px;">
         <div class="row col res">
-            <div class="col-sm bg-white ml-4 box-of " onclick="">
+            <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
                     <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
                 </div>
@@ -183,7 +189,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-sm bg-white ml-4 box-of " onclick="">
+            <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
                     <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
                 </div>
@@ -195,7 +201,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-sm bg-white  ml-4 box-of " onclick="">
+            <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
                     <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
                 </div>
@@ -213,19 +219,19 @@
     </div>
 <div class="result" style="margin: 0px 8px 20px 300px;">
         <div class="row col res">
-            <div class="col-sm bg-white ml-4 box-of " onclick="">
+            <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
                     <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
                 </div>
                 <div class="pt-3 pb-3">
-                    <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
+                    <span class="font-weight-bold font18-of text-dark" id="judul">Kartu Tanda Mahasiswa</span> <br>
                     <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
                     <span class="font14-of fontc-6-of" id="lokasi">
                         <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Tokong Nanas
                     </span>
                 </div>
             </div>
-            <div class="col-sm bg-white ml-4 box-of " onclick="">
+            <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
                     <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
                 </div>
@@ -237,7 +243,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-sm bg-white  ml-4 box-of " onclick="">
+            <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
                     <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
                 </div>
