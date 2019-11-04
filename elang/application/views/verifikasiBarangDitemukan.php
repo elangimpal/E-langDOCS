@@ -95,7 +95,10 @@
               <div class="col-4">
               </div>
               <div class="col-8">
+              <a href="<?= base_url('index.php/verifikasiBarangDS')?>">
                 <button type="button" class="btn btn1-elang btn-md btn-block text-white shadow">SAYA MENEMUKANNYA</button>
+              </a>
+                
               </div>
             </div>
           </div>

@@ -92,8 +92,10 @@
                     </div> -->
                   </div>
               </div>
+              <a href="<?= base_url('index.php/verifikasiBarangD')?>" >
                 <button type="button" class="btn btn1-elang mt-4 btn-md btn-block text-white shadow" href="#">SAYA MENEMUKANNYA</button>
-                <!-- href="<?= base_url('index.php/verifikasiBarangD')?>" -->
+              </a>
+                <!-- -->
               </div>
               </div>
             </div>

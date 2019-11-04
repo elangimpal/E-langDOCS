@@ -1,6 +1,20 @@
 <!-- manggil navbar -->
 <?php $this->load->view('templates/navbar')?>
 <link href="img/elang.ico" rel="shortcut icon" />
+<style>
+.box{
+    width:1010px;
+    height:330px;
+    margin-left:180px;
+    margin-top:80px;
+    border-radius:15px;
+}
+
+.box-form{
+    margin:40px; background-color:lightblue; border-radius:10px
+}
+
+</style>
 
 <body>
     <div class="container">
@@ -17,15 +31,18 @@
                 <div class="cari">
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                        <a href="<?= base_url('index.php/SearchResult')?>">
+                            <button class="btn btn-outline-info my-2 my-sm-0" type="button">Search</button>
+                        </a>
+                        
                     </form>
                 </div>
             </div>
-            <div class="d-flex bg-white border-bottom-0 border-top-0 shadow-sm" style="width:1010px; height:330px; margin-left:180px; margin-top:80px; border-radius:15px;">
-                <div class="col-sm-5 border-bottom-0 border-top-0 shadow-sm" style="margin:40px; background-color:lightblue; border-radius:10px">
+            <div class="d-flex bg-white border-bottom-0 border-top-0 shadow-sm box">
+                <div class="col-sm-5 border-bottom-0 border-top-0 shadow-sm box-form">
                     <a href="<?= base_url('index.php/formHilang')?>">
                         <div class="img2">
-                            <img src="<?= base_url('assets/img/lost-item.png')?>" style="width:110px; height: 110px;">
+                            <img class="img-lostfound-item" src="<?= base_url('assets/img/lost-item.png')?>" style="width:110px; height: 110px;">
                         </div>    
                         <div class="txt2">
                             <h4 style="color:black">Kehilangan Barang</h4>
@@ -34,10 +51,10 @@
                     
                 </div>
                 
-                <div class="col-sm-5 border-bottom-0 border-top-0 shadow-sm" style="margin:40px; background-color:lightblue; border-radius:10px">
+                <div class="col-sm-5 border-bottom-0 border-top-0 shadow-sm box-form">
                     <a href="<?= base_url('index.php/formHilang')?>">
                         <div class="img3">
-                            <img src="<?= base_url('assets/img/lost-item.png')?>" style="width:110px; height: 110px;">
+                            <img class="img-lostfound-item" src="<?= base_url('assets/img/lost-item.png')?>" style="width:110px; height: 110px;">
                         </div>    
                         <div class="txt3">
                             <h4 style="color:black">Menemukan Barang</h4>

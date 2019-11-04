@@ -101,7 +101,9 @@
           <div class="mt-4 mb-2">
             <a class="font-weight-bold" style="font-size : 17px;">TERIMA KASIH TELAH BEKERJA SAMA DENGAN KAMI</a><br>
           </div>
+          <a href="<?= base_url('index.php/Dashboard')?>">
           <button type="button" class="btn btn2-elang btn-md btn-block text-white shadow">KEMBALI KE BERANDA</button>
+          </a>
         </div>
         <div class="col-2">
         </div>
