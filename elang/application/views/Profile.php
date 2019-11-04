@@ -33,22 +33,17 @@
 </head>
 
 <body>
-    <div class="sidenav">
-        <div class="profile">
-            <h5>LAMAN PROFILE</h5>
-        </div>
-        <a href="<?= base_url('index.php/Notifikasi') ?>" style="color:white"><b>Notifikasi</b></a>
-        <a href="<?= base_url('index.php/BarangHilang') ?>">Barang Hilang</a>
-        <a href="<?= base_url('index.php/BarangDitemukan') ?>">Barang Ditemukan</a>
-        <a href="<?= base_url('index.php/Profile') ?>">Pengaturan</a>
-    </div>
 
+    <!-- ini side bar -->
+    <?php $this->load->view('templates/sidebar') ?>
+
+    <!-- ini body profile -->
     <div class="container" style="margin-top: 5%; margin-left: 25%;">
         <div class="row">
             <div class="col-" style="width: 250px;">
                 <div class="boxed boxed--lg boxed--border" style="box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15); border-radius: 30px;">
                     <div class="text-block text-center">
-                        <img src="<?= base_url('assets/img/profile/profile-pic.jpg')?>" alt="" style="width: 50px;">
+                        <!-- <img src="<?= base_url('assets/img/profile/profile-pic.jpg') ?>" alt="" style="width: 10%;"> -->
                         <h5 style="margin-top: 5%; color: cadetblue;">sadakosan</h5>
                         <span>Sadako bin Masako</span><br>
                     </div>
@@ -64,7 +59,7 @@
                             <li>
                                 <a href="#" class="">Hapus Akun</a>
                             </li>
-                        </ul> 
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -89,7 +84,7 @@
         </div>
     </div>
 
-
+    
 </body>
 
 </html>
