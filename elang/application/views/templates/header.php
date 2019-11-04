@@ -72,13 +72,19 @@
                             <input type="text" class="form-control" name="username" id="inputUsername" placeholder="Username">
                         </div>
                         <div id="formEmail" class="form-group">
-                            <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Email">
+                            <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email">
+                        </div>
+                        <div id="formHandphone" class="form-group">
+                            <input type="text" class="form-control" name="handphone" id="inputHandphone" placeholder="No. Handphone">
+                        </div>
+                        <div id="formAlamat" class="form-group">
+                            <input type="text" class="form-control" name="alamat" id="inputAlamat" placeholder="Alamat">
                         </div>
                         <div id="formPassword" class="form-group">
-                            <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+                            <input type="password" class="form-control" name="password" id="inputPassword1" placeholder="Password">
                         </div>
                         <div id="formPassword2" class="form-group">
-                            <input type="password" class="form-control" name="password_conf" id="exampleInputPassword1" placeholder="Konfirmasi Password">
+                            <input type="password" class="form-control" name="password_conf" id="inputPassword2" placeholder="Konfirmasi Password">
                         </div>
                         <p>Dengan mendaftar, anda menyetujui <br>
                             <u>Syarat Penggunaan</u> dan <u>Kebijakan Privasi</u>.</p>
@@ -116,7 +122,7 @@
                 <a class="nav-link trigger-btn" href="#myModal" data-toggle="modal" style="color:white"><b>MASUK</b></a>
             </li>
             <li class="nav-item items">
-                <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>
+                <a class="nav-link" href="<?= base_url('index.php/Dashboard') ?>" style="color:white"><b>FAQ</b></a>
             </li>
         </ul>
 
