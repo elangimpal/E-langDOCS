@@ -44,11 +44,11 @@
 
     <!-- Modal Ganti Password -->
     <div id="modalPassword" class="modal fade">
-        <div class="modal-dialog modal-login">
+        <div class="modal-dialog modal-login modal-sm" style="margin-top: 14%;">
             <div class="modal-content">
                 <form action="#" method="post">
                     <div class="modal-header">
-                        <h4 class="modal-title">Ganti kata sandi</h4>
+                        <h4 class="modal-title" style="margin-left: 15%;">Ganti kata sandi</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
@@ -71,10 +71,10 @@
 
     <!-- Modal HAPUS AKUN -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" style="margin-top: 14%;">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel">HAPUS AKUN</h5>
+                    <h5 class="modal-title text-center" id="exampleModalLabel" style="margin-left: 35%;">HAPUS AKUN</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -101,10 +101,10 @@
             <div class="col-3" style="width: 600px;">
                 <div class="boxed boxed--lg boxed--border" style="box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15); border-radius: 30px;">
                     <div class="text-block text-center">
-                        <img src="<?= base_url('assets/img/profile/profile-pic.jpg') ?>" alt="Avatar" class="avatar" style="width: 75px; height: 75px; border-radius: 50%; margin-right: 38%; margin-top: 10%;">
+                        <img src="<?= base_url('assets/img/profile/profile-pic.jpg') ?>" alt="Avatar" class="avatar" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); width: 75px; height: 75px; border-radius: 50%; margin-right: 38%; margin-top: 10%;">
                         <br><br><br><br>
-                        <h5 style="color: cadetblue; margin-top: 20px;">sadakosan</h5>
-                        <span>Sadako bin Masako</span><br>
+                        <h5 style="color: cadetblue; margin-top: 20px;">Shahnaz</h5>
+                        <span>Shahnaz Nur Asyifa</span><br>
                     </div>
                     <hr>
                     <div class="text-block">
@@ -122,13 +122,14 @@
             </div>
             <div style="width: 600px; margin-left: 28px;">
                 <div class="boxed boxed--lg boxed--border" style="box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15); border-radius: 30px;">
+                    <?php foreach($users as $row){?>
                     <div class="form-group"><br>
                         <h2 style="margin-left: 5%;">Profil</h2><br>
                         <div class="form-area" style="margin-left: 5%">
                             <label>Nama</label>
                             <input type="text" class="form-control" id="nama" name="nama" value="Shahnaz Nur Asyifa"><br>
                             <label>Username</label>
-                            <input type="text" class="form-control" id="nama" name="username" value="Shahnaz    "><br>
+                            <input type="text" class="form-control" id="nama" name="username" value="<?= $row->nama?>"><br>
                             <label>Email</label>
                             <input type="text" class="form-control" id="email" name="email" value="ddcantik@gmail.com"><br>
                             <label>No. Ponsel</label>
@@ -138,6 +139,7 @@
                         </div>
                         <button id="btnSave" type="submit" class="btn btn-primary" style="margin-left: 69%; margin-top: 2%;">Update Profil</button>
                     </div>
+                    <?php }?>
                     <br>
                 </div>
             </div>
