@@ -21,10 +21,10 @@
     <!-- navbar fixed top -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#11212E">
         <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">
-            <img src="<?= base_url('assets/img/logo.png')?>" alt="logo" style="width:40px;">
+        <a class="navbar-brand" href="<?=base_url('index.php/Home')?>">
+            <img src="<?= base_url('assets/img/logo.png') ?>" alt="logo" style="width:40px;">
         </a>
-        
+
         <!-- Links -->
         <ul class="navbar-nav">
                     <li class="nav-item">

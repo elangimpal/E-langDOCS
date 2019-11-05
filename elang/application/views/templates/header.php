@@ -20,13 +20,12 @@
 </head>
 
 
-
 <body>
     <!-- Modal LOGIN -->
     <div id="myModal" class="modal fade">
         <div class="modal-dialog modal-login">
             <div class="modal-content">
-                <form action="#" method="post">
+                <form action="<?= base_url('index.php/Login_controller/aksi_login') ?>" method="POST">
                     <div class="modal-header">
                         <h4 class="modal-title">Masuk</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -34,18 +33,18 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label>Username</label>
-                            <input type="text" class="form-control" required="required">
+                            <input type="text" class="form-control" required="required" name="username">
                         </div>
                         <div class="form-group">
                             <div class="clearfix">
                                 <label>Password</label>
                                 <a href="#" class="pull-right text-muted"><small>Lupa password?</small></a>
                             </div>
-                            <input type="password" class="form-control" required="required">
+                            <input type="text" class="form-control" required="required" name="password">
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <label class="checkbox-inline pull-left"><input type="checkbox"> Remember me</label>
+                        <label class="checkbox-inline pull-left"><input type="checkbox"> Ingat saya</label>
                         <input type="submit" class="btn btn-primary pull-right" value="Masuk">
                     </div>
                 </form>
@@ -101,7 +100,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#11212E">
         <!-- <nav class="navbar navbar-expand-sm navbar-dark " style="background-color:#11212E"> -->
         <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="<?=base_url('index.php/Home')?>">
             <img src="<?= base_url('assets/img/logo.png') ?>" alt="logo" style="width:40px;">
         </a>
 

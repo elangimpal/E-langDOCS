@@ -7,4 +7,18 @@ class Home_controller extends CI_Controller {
 	{
 		$this->load->view('Home');
 	}
+
+	public function doLogin(){
+				$email = $this->input->post('email',true);
+				$password = $this->input->post('password',true);
+
+				$res = $this->LoginModel->getUserLogin($email,$password);
+
+				if($res != null){
+						redirect('Dashboard_controller');
+				}else{
+						echo "Username dan password salah !";
+						redirect('Home_controller');
+				}
+		}
 }
