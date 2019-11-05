@@ -68,11 +68,11 @@
             <div class="row">
                     <div class="col-sm-2"></div>
                     <div class="col-sm-10" style="margin-left:300px">
-                    <div class="container p-5 col-10">
+                    <div class="container p-5 col-10" style="border-radius: 15px; margin-bottom: 50px;background-color: #ffffff !important; box-shadow: 0 .225rem .25rem rgba(0,0,0.1,0.175)!important;">
                 <form action="/action_page.php">
                     <div class="row">
                         <div class="col-25 media">
-                            <img id="image1"src="<?= base_url('assets/img/logo.png')?>" class="img" alt="Gambar">
+                            <img id="image1"src="<?= base_url('assets/img/input.png')?>" class="img" alt="Gambar">
                         </div>
                         <div class="col-75 media-body">
                             <label for="imgInp">Gambar</label>
@@ -168,7 +168,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <input class="btnSub"type="submit" value="Simpan">
+                        <input class="btnSub"type="submit" value="Simpan" style="background-color: #11212E;margin-top: 20px;padding: 10px 30px 10px 30px;">
                     </div>
                 </form>
             </div>
