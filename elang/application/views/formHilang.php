@@ -79,7 +79,9 @@
                             <p>Format gambar .jpg .jpeg dan ukuran minimum 300 x 300px (Untuk gambar optimal ukuran 700 x 700px)</p>
                             <input type="file" id="imgInp" multiple="multiple" hidden="hidden"/>
                             <button type="button" id="custom-button">Unggah</button>
+                            
                             <span id="custom-text">Pilih Gambar Produk</span>
+                            
                         </div>
                     </div>
                     <div class="row">
@@ -168,8 +170,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        <input class="btnSub"type="submit" value="Simpan" style="background-color: #11212E;padding: 10px 30px 10px 30px;">
+                        <input class="btnSub"type="submit" value="Simpan" style="background-color: #11212E;margin-top: 20px;padding: 10px 30px 10px 30px;">
                     </div>
+                    
                 </form>
             </div>
                 <!-- end -->

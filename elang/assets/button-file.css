@@ -1,3 +1,4 @@
+
 #custom-button {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -249,14 +250,31 @@ ul{list-style-type:none;
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 /*NAVBAR*/
+.img-card{
+  object-fit: cover;
+  object-position: 80% 0;
+  width: 300px;
+  height: 250px;
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+  padding:0px !important;
 
+}
 
 .nav-o{
 
     padding-left: 70px;
     padding-right: 70px;
 }
+a:link, a:visited, a:hover{
+  color: #212529;
+  text-decoration: none;
+  cursor: hand;
+}
 
+a:link:active, a:visited:active {
+  color: #212529;
+}
 .logo-o{
   position: absolute;
 width: 90px;
