@@ -224,7 +224,7 @@
                     <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
                 </div>
                 <div class="pt-3 pb-3">
-                    <span class="font-weight-bold font18-of text-dark" id="judul">Kartu Tanda Mahasiswa</span> <br>
+                    <span class="font-weight-bold font18-of " id="judul">Kartu Tanda Mahasiswa</span> <br>
                     <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
                     <span class="font14-of fontc-6-of" id="lokasi">
                         <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Tokong Nanas

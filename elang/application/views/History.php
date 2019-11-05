@@ -39,7 +39,7 @@
                                     </tr>
                                     <tr>
                                         <td>KTM</td>
-                                        <td><button>Lihat</button></td>
+                                        <td><button class="">Lihat</button></td>
                                         <td style="color:red">HILANG</td>
                                     </tr>
                                 </tbody>
