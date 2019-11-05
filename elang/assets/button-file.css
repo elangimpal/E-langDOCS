@@ -1,4 +1,25 @@
+/* UNGGAH */
+.imageThumb {
+  max-height: 75px;
+  object-fit: cover;
+  padding: 1px;
+  cursor: pointer;
+}
+.remove {
+  display: block;
+  color: red;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
 
+  .remove:hover {
+      background-color: none;
+      color: black;
+  }
+
+
+/* UNGGAH */
 #custom-button {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -135,7 +156,6 @@ input[type="file"] {
 }
 #image1{
     padding-right: 20px;
-    height: auto;
     max-width: 200px;
     margin-right: 10px !important;
 }

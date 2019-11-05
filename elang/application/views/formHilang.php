@@ -12,6 +12,37 @@
   <!-- CSS SENDIRI -->
   <link href="img/elang.ico" rel="shortcut icon" />
   <link rel="stylesheet" href="<?= base_url(); ?>/assets/button-file.css">
+  <style>
+  .imageThumb {
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+  padding: 1px;
+  cursor: pointer;
+}
+.remove {
+  display: block;
+  color: red;
+  border: 0px;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+}
+
+  .remove:hover {
+      background: none;
+      color: black;
+  }
+  input[type="file"] {
+            display: block;
+        }
+    #image1{
+        object-fit: cover !important;
+        height: 200px !important;
+        width: 200px !important;
+        
+    }
+  </style>
 
 </head>
 <body>
@@ -72,12 +103,13 @@
                 <form action="/action_page.php">
                     <div class="row">
                         <div class="col-25 media">
-                            <img id="image1"src="<?= base_url('assets/img/input.png')?>" class="img" alt="Gambar">
+                            <img id="image1"src="<?= base_url('assets/img/input.png')?>" class="img files" alt="Gambar">
                         </div>
                         <div class="col-75 media-body">
                             <label for="imgInp">Gambar</label>
                             <p>Format gambar .jpg .jpeg dan ukuran minimum 300 x 300px (Untuk gambar optimal ukuran 700 x 700px)</p>
-                            <input type="file" id="imgInp" multiple="multiple" hidden="hidden"/>
+                            <!-- <input type="file" id="imgInp" multiple="multiple" hidden="hidden"/> -->
+                            <input type="file" class="files" id="imgInp"  name="files[]" multiple hidden />
                             <button type="button" id="custom-button">Unggah</button>
                             
                             <span id="custom-text">Pilih Gambar Produk</span>
@@ -195,7 +227,128 @@
     <script src="assets/js/main.js"></script>
     <script type="text/javascript" src="<?= base_url(); ?>assets/js/button-file.js"></script>
     <script type="text/javascript">
-        
+        // button upload
+//         const realFileBtn = document.getElementById("imgInp");
+//         const customBtn = document.getElementById("custom-button");
+//         const customTxt = document.getElementById("custom-text");
+
+//         customBtn.addEventListener("click", function () {
+//             realFileBtn.click();
+//         });
+
+//         realFileBtn.addEventListener("change", function () {
+//             if (realFileBtn.value) {
+//                 customTxt.innerHTML = realFileBtn.value.match(
+//                     /[\/\\]([\w\d\s\.\-\(\)]+)$/
+//                 )[1];
+//             } else {
+//                 customTxt.innerHTML = "No file chosen, yet.";
+//             }
+//         });
+
+// // upload preview
+// function readURL(input) {
+//     if (input.files && input.files[0]) {
+//       var reader = new FileReader();
+      
+//       reader.onload = function(e) {
+//         $('#image1').attr('src', e.target.result);
+//       }
+      
+//       reader.readAsDataURL(input.files[0]);
+//     }
+//   } 
+  
+//   $("#imgInp").change(function() {
+//     readURL(this);
+//   });
+  
+// nambah ciri-ciri   
+var myNodelist = document.getElementsByClassName("liC");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+// var list = document.querySelector('ul');
+// list.addEventListener('click', function(ev) {
+//   if (ev.target.tagName === 'LI') {
+//     ev.target.classList.toggle('checked');
+//   }
+// }, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var lu = document.createElement("li");
+  lu.className = "liC";
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  lu.appendChild(t);
+  if (inputValue === '') {
+    alert("Ciri-ciri belum terisi");
+  } else {
+    document.getElementById("myUL").appendChild(lu);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  lu.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+// multiple photo
+        $(document).ready(function () {
+            if (window.File && window.FileList && window.FileReader) {
+                $(".files").on("change", function (e) {
+                    var clickedButton = this;
+                    var files = e.target.files,
+                        filesLength = files.length;
+                    for (var i = 0; i < filesLength; i++) {
+                        var f = files[i]
+                        var fileReader = new FileReader();
+                        fileReader.onload = (function (e) {
+                            var file = e.target;
+                            $("<span class=\"pip\">" +
+                                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                                "<br/><span class=\"remove\">x</span>" +
+                                "</span>").insertAfter(clickedButton);
+                            $(".remove").click(function () {
+                                $(this).parent(".pip").remove();
+                            });
+                        });
+                        fileReader.readAsDataURL(f);
+                        if(filesLength == 0){
+
+                        }
+                    }
+                });
+            } else {
+                alert("Your browser doesn't support to File API")
+            }
+        });
     </script>
 
     <!--======================================-->

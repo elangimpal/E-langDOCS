@@ -181,22 +181,26 @@
         <div class="row col res">
             <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
-                    <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
+                    <img class="col-12 pt-4 pkantin-of img-card" src="../assets/img/ktmh_c.png">
                 </div>
                 <div class="pt-3 pb-3">
+                    <a href="<?= base_url('index.php/detailBarang')?>">
                     <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
+                    </a>
                     <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
                     <span class="font14-of fontc-6-of" id="lokasi">
-                        <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Tokong Nanas
+                        <img src="<?= base_url()?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Tokong Nanas
                     </span>
                 </div>
             </div>
             <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
-                    <img class="col-12 pt-4 pkantin-of img-card" src="../assets/img/p-kantin1.jpg">
+                    <img class="col-12 pt-4 pkantin-of img-card" src="../assets/img/image1.png">
                 </div>
                 <div class="pt-3 pb-3">
+                <a href="<?= base_url('index.php/detailBarang')?>">                
                     <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
+                </a>
                     <span class="font14-of fontc-6-of" id="status">Ditemukan </span><br>
                     <span class="font14-of fontc-6-of" id="lokasi">
                         <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Panambulai
@@ -205,10 +209,10 @@
             </div>
             <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
-                    <img class="col-12 pt-4 pkantin-of img-card" src="../assets/img/p-kantin1.jpg">
+                    <img class="col-12 pt-4 pkantin-of img-card" src="../assets/img/ktp.jpg">
                 </div>
                 <div class="pt-3 pb-3">
-                    <span class="font-weight-bold font18-of" id="judul">Modul PBO</span> <br>
+                    <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Penduduk</span> <br>
                     <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
                     <span class="font14-of fontc-6-of" id="lokasi">
                         <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Ged. F
@@ -219,26 +223,30 @@
         </div>
 
     </div>
-<div class="result" style="margin: 0px 8px 20px 300px;">
+    <div class="result" style="margin: 0px 8px 20px 300px;">
         <div class="row col res">
             <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
-                    <img class="col-12 pt-4 pkantin-of img-card" src="../assets/img/p-kantin1.jpg">
+                    <img class="col-12 pt-4 pkantin-of img-card" src="../assets/img/ktmh_c.png">
                 </div>
                 <div class="pt-3 pb-3">
-                    <span class="font-weight-bold font18-of " id="judul">Kartu Tanda Mahasiswa</span> <br>
+                    <a href="<?= base_url('index.php/detailBarang')?>">
+                    <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
+                    </a>
                     <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
                     <span class="font14-of fontc-6-of" id="lokasi">
-                        <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Tokong Nanas
+                        <img src="<?= base_url()?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Tokong Nanas
                     </span>
                 </div>
             </div>
             <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
-                    <img class="col-12 pt-4 pkantin-of img-card" src="../assets/img/p-kantin1.jpg">
+                    <img class="col-12 pt-4 pkantin-of img-card" src="../assets/img/image1.png">
                 </div>
                 <div class="pt-3 pb-3">
+                <a href="<?= base_url('index.php/detailBarang')?>">                
                     <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
+                </a>
                     <span class="font14-of fontc-6-of" id="status">Ditemukan </span><br>
                     <span class="font14-of fontc-6-of" id="lokasi">
                         <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Panambulai
@@ -247,10 +255,10 @@
             </div>
             <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
-                    <img class="col-12 pt-4 pkantin-of img-card" src="../assets/img/p-kantin1.jpg">
+                    <img class="col-12 pt-4 pkantin-of img-card" src="../assets/img/ktp.jpg">
                 </div>
                 <div class="pt-3 pb-3">
-                    <span class="font-weight-bold font18-of" id="judul">Modul PBO</span> <br>
+                    <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Penduduk</span> <br>
                     <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
                     <span class="font14-of fontc-6-of" id="lokasi">
                         <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Ged. F
