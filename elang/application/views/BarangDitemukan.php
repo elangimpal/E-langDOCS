@@ -26,6 +26,8 @@
                                         <th>Lokasi</th>
                                         <th>Tanggal</th>
                                         <th>Status</th>
+                                        <th></th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -35,6 +37,8 @@
                                         <td>LABIF 03</td>
                                         <td>01 - 03 - 2019</td>
                                         <td style="color:green">DIKLAIM</td>
+                                        <td><img src="<?= base_url('assets/img/edit.png')?>" style="width:24px;height:24px;left:929px"> </td>
+                                        <td><img src="<?= base_url('assets/img/delete.png')?>" style="width:24px;height:24px;left:979px"> </td>
                                     </tr>
                                     <tr>
                                         <td>HP Samsung A10s</td>
@@ -42,6 +46,8 @@
                                         <td>MSU</td>
                                         <td>10 - 02 - 2019</td>
                                         <td style="color:green">DIKLAIM</td>
+                                        <td><img src="<?= base_url('assets/img/edit.png')?>" style="width:24px;height:24px;left:929px"> </td>
+                                        <td><img src="<?= base_url('assets/img/delete.png')?>" style="width:24px;height:24px;left:979px"> </td>
                                     </tr>
                                     <tr>
                                         <td>Dompet</td>
@@ -49,6 +55,8 @@
                                         <td>GKU</td>
                                         <td>05 - 01 - 2019</td>
                                         <td style="color:green">DIKLAIM</td>
+                                        <td><img src="<?= base_url('assets/img/edit.png')?>" style="width:24px;height:24px;left:929px"> </td>
+                                        <td><img src="<?= base_url('assets/img/delete.png')?>" style="width:24px;height:24px;left:979px"> </td>
                                     </tr>
                                 </tbody>
                             </table>

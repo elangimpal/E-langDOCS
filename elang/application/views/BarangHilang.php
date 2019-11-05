@@ -26,6 +26,8 @@
                                         <th>Lokasi</th>
                                         <th>Tanggal</th>
                                         <th>Status</th>
+                                        <th></th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -35,6 +37,8 @@
                                         <td>Situ techno</td>
                                         <td>16 - 02 - 2019</td>
                                         <td style="color:red">HILANG</td>
+                                        <td><img src="<?= base_url('assets/img/edit.png')?>" style="width:24px;height:24px;left:929px"> </td>
+                                        <td><img src="<?= base_url('assets/img/delete.png')?>" style="width:24px;height:24px;left:979px"> </td>
                                         
                                     </tr>
                                     <tr>
@@ -43,6 +47,8 @@
                                         <td>Kantin Teknik</td>
                                         <td>01 - 01 - 2019</td>
                                         <td style="color:green">DITEMUKAN</td>
+                                        <td><img src="<?= base_url('assets/img/edit.png')?>" style="width:24px;height:24px;left:929px"> </td>
+                                        <td><img src="<?= base_url('assets/img/delete.png')?>" style="width:24px;height:24px;left:979px"> </td>
                                     </tr>
                                 </tbody>
                             </table>
