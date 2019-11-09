@@ -40,7 +40,7 @@
                                 <label>Password</label>
                                 <a href="#" class="pull-right text-muted"><small>Lupa password?</small></a>
                             </div>
-                            <input type="text" class="form-control" required="required" name="password">
+                            <input type="password" class="form-control" required="required" name="password">
                         </div>
                     </div>
                     <div class="modal-footer">

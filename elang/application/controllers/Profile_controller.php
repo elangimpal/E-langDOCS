@@ -1,41 +1,48 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php 
 
-class Profile_controller extends CI_Controller {
+
+class Profile_controller extends CI_Controller{
 
 	function __construct(){
-		parent::__construct();
+		parent::__construct();		
 		$this->load->model('ProfileModel');
 		$this->load->helper('url');
+
 	}
-	public function index()
-	{
-		$where = array('username' => $this->session->userdata('username'));
-		$data['users'] = $this->ProfileModel->edit_data($where,'user');
+
+	function index(){
+		$data['user'] = $this->ProfileModel->tampil_data()->result();
 		$this->load->view('Profile',$data);
 	}
 
-	function edit($username){
-		$where = array('username' => $username);
-		$data['users'] = $this->ProfileModel->edit_data($where,'user');
-		$this->load->view('Profile',$data);
-	}
+	// function tambah(){
+	// 	$this->load->view('v_input');
+	// }
 
-	function update(){
-		$last_name = $this->input->post('nama');
+	function tambah_aksi(){
+		$nama = $this->input->post('nama');
+		$username = $this->input->post('username');
 		$email = $this->input->post('email');
 
 		$data = array(
 			'nama' => $nama,
+			'username' => $username,
 			'email' => $email
-		);
-
-		$where = array(
-			'username' => $this->session->userdata('username')
-		);
-
-		$this->ProfileModel->update_data($where,$data,'user');
-		redirect('ProfileController');
-
+			);
+		$this->ProfileModel->input_data($data,'user');
+		redirect('crud/index');
 	}
+
+	function hapus($id){
+		$where = array('id' => $id);
+		$this->ProfileModel->hapus_data($where,'user');
+		redirect('crud/index');
+	}
+
+	function edit($id){
+		$where = array('id' => $id);
+		$data['user'] = $this->ProfileModel->edit_data($where,'user')->result();
+		$this->load->view('v_edit',$data);
+	}
+
 }

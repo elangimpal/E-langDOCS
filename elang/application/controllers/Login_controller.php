@@ -16,7 +16,7 @@ class Login_controller extends CI_Controller{
 		$password = $this->input->post('password');
 		$where = array(
 			'username' => $username,
-			'password' => $password
+			'password' => md5($password)
 			);
 		$cek = $this->LoginModel->cek_login("user",$where)->num_rows();
 		if($cek > 0){
@@ -31,10 +31,10 @@ class Login_controller extends CI_Controller{
 			redirect(base_url("index.php/Dashboard_controller"));
 
 		}else{
-			redirect(base_url("index.php/Home"));
-			// echo $username," ";
-			// echo $password," ";
-			// echo "Username dan password salah !";
+			// redirect(base_url("index.php/Home"));
+			echo $username," ";
+			echo md5($password)," ";
+			echo "Username dan password salah !";
 		}
 	}
 

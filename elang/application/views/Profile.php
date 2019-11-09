@@ -103,8 +103,9 @@
                     <div class="text-block text-center">
                         <img src="<?= base_url('assets/img/profile/profile-pic.jpg') ?>" alt="Avatar" class="avatar" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); width: 75px; height: 75px; border-radius: 50%; margin-right: 38%; margin-top: 10%;">
                         <br><br><br><br>
-                        <h5 style="color: cadetblue; margin-top: 20px;">Shahnaz</h5>
-                        <span>Shahnaz Nur Asyifa</span><br>
+                        <?php $data['user'] = $this->db->where('username', $username);?>
+                        <h5 style="color: cadetblue; margin-top: 20px;"><?php echo $user->username ?></h5>
+                        <span><?php echo $u->nama ?></span><br>
                     </div>
                     <hr>
                     <div class="text-block">
@@ -122,24 +123,23 @@
             </div>
             <div style="width: 600px; margin-left: 28px;">
                 <div class="boxed boxed--lg boxed--border" style="box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15); border-radius: 30px;">
-                    <?php foreach($users as $row){?>
                     <div class="form-group"><br>
                         <h2 style="margin-left: 5%;">Profil</h2><br>
                         <div class="form-area" style="margin-left: 5%">
                             <label>Nama</label>
-                            <input type="text" class="form-control" id="nama" name="nama" value="Shahnaz Nur Asyifa"><br>
+                            <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $user->nama ?>"><br>
                             <label>Username</label>
-                            <input type="text" class="form-control" id="nama" name="username" value="<?= $row->nama?>"><br>
+                            <input type="text" class="form-control" id="nama" name="username" value="<?php echo $this->session->userdata("nama"); ?>"><br>
                             <label>Email</label>
-                            <input type="text" class="form-control" id="email" name="email" value="ddcantik@gmail.com"><br>
+                            <input type="text" class="form-control" id="email" name="email" value="<?php echo $user->email ?>"><br>
                             <label>No. Ponsel</label>
-                            <input type="text" class="form-control" id="noPonsel" name="noPonsel" value="081613726381"><br>
+                            <input type="text" class="form-control" id="noPonsel" name="noPonsel" value="<?php echo $user->no_handphone ?>"><br>
                             <label>Alamat</label>
-                            <input type="text" class="form-control" id="alamat" name="alamat" value="Sukbir"><br>
+                            <input type="text" class="form-control" id="alamat" name="alamat" value="<?php echo $user->alamat ?>"><br>
+                            <?php ?>
                         </div>
                         <button id="btnSave" type="submit" class="btn btn-primary" style="margin-left: 69%; margin-top: 2%;">Update Profil</button>
                     </div>
-                    <?php }?>
                     <br>
                 </div>
             </div>
