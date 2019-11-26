@@ -70,7 +70,7 @@
     </div>
 
     <!-- Modal HAPUS AKUN -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document" style="margin-top: 14%;">
             <div class="modal-content">
                 <div class="modal-header">
@@ -88,14 +88,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- ini body profile -->
     <div style="margin-top: 8.9%; margin-left: 24%">
         <h2>Pengaturan Profil</h2>
     </div>
-    <!-- <div class="container" style="margin-top: 10%; margin-left: 20%"> -->
     <div class="container" style="margin-left: 23.5%; margin-top: 2.5%;">
         <div class="row">
             <div class="col-3" style="width: 600px;">
@@ -103,9 +102,9 @@
                     <div class="text-block text-center">
                         <img src="<?= base_url('assets/img/profile/profile-pic.jpg') ?>" alt="Avatar" class="avatar" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); width: 75px; height: 75px; border-radius: 50%; margin-right: 38%; margin-top: 10%;">
                         <br><br><br><br>
-                        <?php $data['user'] = $this->db->where('username', $username);?>
-                        <h5 style="color: cadetblue; margin-top: 20px;"><?php echo $user->username ?></h5>
-                        <span><?php echo $u->nama ?></span><br>
+                        <!-- $data['user'] = $this->db->where('username', $username); -->
+                        <h5 style="color: cadetblue; margin-top: 20px;">Shahnaz</h5>
+                        <span>Shahnaz Nur Asyifa</span><br>
                     </div>
                     <hr>
                     <div class="text-block">
@@ -113,9 +112,9 @@
                             <li>
                                 <a class="nav-link trigger-btn" href="#modalPassword" data-toggle="modal">Kata Sandi</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a class="nav-link trigger-btn" href="#exampleModal" data-toggle="modal">Hapus Akun</a>
-                            </li>
+                            </li> --> 
                         </ul>
                         <br>
                     </div>
@@ -127,15 +126,15 @@
                         <h2 style="margin-left: 5%;">Profil</h2><br>
                         <div class="form-area" style="margin-left: 5%">
                             <label>Nama</label>
-                            <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $user->nama ?>"><br>
+                            <input type="text" class="form-control" id="nama" name="nama" value="Shahnaz Nur Asyifa"><br>
                             <label>Username</label>
-                            <input type="text" class="form-control" id="nama" name="username" value="<?php echo $this->session->userdata("nama"); ?>"><br>
+                            <input type="text" class="form-control" id="nama" name="username" value="Shahnaz"><br>
                             <label>Email</label>
-                            <input type="text" class="form-control" id="email" name="email" value="<?php echo $user->email ?>"><br>
+                            <input type="text" class="form-control" id="email" name="email" value="ddcantik@gmail.com"><br>
                             <label>No. Ponsel</label>
-                            <input type="text" class="form-control" id="noPonsel" name="noPonsel" value="<?php echo $user->no_handphone ?>"><br>
+                            <input type="text" class="form-control" id="noPonsel" name="noPonsel" value="0898989898"><br>
                             <label>Alamat</label>
-                            <input type="text" class="form-control" id="alamat" name="alamat" value="<?php echo $user->alamat ?>"><br>
+                            <input type="text" class="form-control" id="alamat" name="alamat" value="Sukabirus"><br>
                             <?php ?>
                         </div>
                         <button id="btnSave" type="submit" class="btn btn-primary" style="margin-left: 69%; margin-top: 2%;">Update Profil</button>
