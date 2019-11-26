@@ -13,7 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- CSS SENDIRI -->
-    <link href="img/elang.ico" rel="shortcut icon" />
+    <link href="img/lo.png" rel="shortcut icon" />
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/header.css">
 
 
@@ -101,7 +101,7 @@
         <!-- <nav class="navbar navbar-expand-sm navbar-dark " style="background-color:#11212E"> -->
         <!-- Brand/logo -->
         <a class="navbar-brand" href="<?=base_url('index.php/Home')?>">
-            <img src="<?= base_url('assets/img/logo.png') ?>" alt="logo" style="width:40px;">
+            <img src="<?= base_url('assets/img/lo.png') ?>" alt="logo" style="width:40px;">
         </a>
 
         <!-- Links -->
