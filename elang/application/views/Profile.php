@@ -122,6 +122,7 @@
             </div>
             <div style="width: 600px; margin-left: 28px;">
                 <div class="boxed boxed--lg boxed--border" style="box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15); border-radius: 30px;">
+                <form action="<?= base_url('index.php/Profile_controller/updateProfile') ?>" method="post">
                     <div class="form-group"><br>
                         <h2 style="margin-left: 5%;">Profil</h2><br>
                         <div class="form-area" style="margin-left: 5%">
@@ -132,13 +133,14 @@
                             <label>Email</label>
                             <input type="text" class="form-control" id="email" name="email" value="ddcantik@gmail.com"><br>
                             <label>No. Ponsel</label>
-                            <input type="text" class="form-control" id="noPonsel" name="noPonsel" value="0898989898"><br>
+                            <input type="text" class="form-control" id="noPonsel" name="no_handphone" value="0898989898"><br>
                             <label>Alamat</label>
                             <input type="text" class="form-control" id="alamat" name="alamat" value="Sukabirus"><br>
                             <?php ?>
                         </div>
                         <button id="btnSave" type="submit" class="btn btn-primary" style="margin-left: 69%; margin-top: 2%;">Update Profil</button>
                     </div>
+                </form>
                     <br>
                 </div>
             </div>

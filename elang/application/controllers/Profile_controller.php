@@ -45,4 +45,17 @@ class Profile_controller extends CI_Controller{
 		$this->load->view('v_edit',$data);
 	}
 
+	function updateProfile(){
+		$data= array(
+			$nama = $this->input->post('nama'),
+			$username = $this->input->post('username'),
+			$email = $this->input->post('email'),
+			$no_handphone = $this->input->post('no_handphone'),
+			$alamat = $this->input->post('alamat')
+		);
+		$username = $this->input->post('username');
+		$this->ProfileModel->update_data($username, $data, 'user');
+		echo "berhasil";
+
+	}
 }

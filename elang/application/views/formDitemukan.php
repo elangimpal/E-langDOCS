@@ -100,7 +100,8 @@
                     <div class="col-sm-2"></div>
                     <div class="col-sm-10" style="margin-left:300px">
                     <div class="container p-5 col-10" style="border-radius: 15px; margin-bottom: 50px;background-color: #ffffff !important; box-shadow: 0 .225rem .25rem rgba(0,0,0.1,0.175)!important;">
-                <form action="/action_page.php">
+                <!-- <?php //echo form_open_multipart('index.php/formDitemukan_controller/insertBarang') ?> -->
+                <form method='post' action='<?php echo base_url('index.php/formDitemukan_controller/insertBarang'); ?>' enctype='multipart/form-data'>
                     <div class="row">
                         <div class="col-25 media">
                             <img id="image1"src="<?= base_url('assets/img/input.png')?>" class="img files" alt="Gambar">
@@ -166,7 +167,7 @@
                             <label for="ciriciri">Ciri-ciri</label>
                         </div>
                         <div class="col-50">
-                            <input type="text" id="myInput" placeholder="Contoh: warna, merek, ukuran.">
+                            <input name="ciri" type="text" id="myInput" placeholder="Contoh: warna, merek, ukuran.">
                         </div>
                         <div class="col-25">
                             <span onclick="newElement()" class="addBtn">+ Tambahkan ciri-ciri </span>
