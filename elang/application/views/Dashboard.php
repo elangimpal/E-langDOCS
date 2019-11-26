@@ -1,6 +1,6 @@
 <!-- manggil navbar -->
 <?php $this->load->view('templates/navbar')?>
-<link href="img/elang.ico" rel="shortcut icon" />
+<link href="img/lo.ico" rel="shortcut icon" />
 <style>
 .box{
     width:1010px;
