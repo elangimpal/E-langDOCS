@@ -41,7 +41,7 @@
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="<?= base_url('index.php/Profile')?>">Edit Profil</a>
-                            <a class="dropdown-item" href="<?= base_url('index.php/Home')?>">Keluar</a>
+                            <a class="dropdown-item" href="<?= base_url('index.php/Login_controller/logout')?>">Keluar</a>
                         </div>
                         </li>
                     </li>

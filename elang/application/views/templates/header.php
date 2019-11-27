@@ -18,7 +18,11 @@
 
 
 </head>
-
+<style>
+.btn-daftar{
+    margin-left: 395px;
+}
+</style>
 
 <body>
     <!-- Modal LOGIN -->
@@ -56,18 +60,18 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <button type="button" class="close" id="closeicon" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">FORM DAFTAR</h5>
+                    <button type="button" class="close" id="closeicon" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
                 </div>
                 <div class="modal-body">
-                    <form action="<?= site_url("RegisterController/index") ?>" method="POST">
-                        <div id="formName" class="form-group form-inline">
+                    <form action="<?= base_url("index.php/Register_Controller/register_handle") ?>" method="POST">
+                        <div id="formName" class="form-group">
                             <input type="text" class="form-control" name="fullName" id="inputName" placeholder="Nama Lengkap">
                         </div>
-                        <div id="formUsername" class="form-group form-inline">
+                        <div id="formUsername" class="form-group">
                             <input type="text" class="form-control" name="username" id="inputUsername" placeholder="Username">
                         </div>
                         <div id="formEmail" class="form-group">
@@ -87,7 +91,7 @@
                         </div>
                         <p>Dengan mendaftar, anda menyetujui <br>
                             <u>Syarat Penggunaan</u> dan <u>Kebijakan Privasi</u>.</p>
-                        <button id="buton" type="submit" class="btn btn-primary">Daftar</button>
+                        <button id="buton" type="submit" class="btn btn-primary btn-daftar">Daftar</button>
                     </form>
                 </div>
             </div>
