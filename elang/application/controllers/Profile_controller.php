@@ -15,22 +15,26 @@ class Profile_controller extends CI_Controller{
 		$this->load->view('Profile',$data);
 	}
 
-	// function tambah(){
-	// 	$this->load->view('v_input');
-	// }
-
 	function tambah_aksi(){
-		$nama = $this->input->post('nama');
 		$username = $this->input->post('username');
+		$nama = $this->input->post('fullName');
+		$pass = $this->input->post('password');
+		$tglahir = $this->input->post('tglahir');
+		$no_handphone = $this->input->post('handphone');
 		$email = $this->input->post('email');
-
+		$alamat = $this->input->post('alamat');
+		
 		$data = array(
-			'nama' => $nama,
 			'username' => $username,
-			'email' => $email
-			);
+			'nama' => $nama,
+			'password' => md5($pass),
+			'tanggal_lahir' => $tglahir,
+			'no_handphone' => $no_handphone,
+			'email' => $email,
+			'alamat' => $alamat,
+		);
 		$this->ProfileModel->input_data($data,'user');
-		redirect('crud/index');
+		redirect(base_url("index.php/Home_controller"));
 	}
 
 	function hapus($id){

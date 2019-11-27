@@ -1,4 +1,4 @@
-.nav-right{
+.nav-right {
     position: absolute;
     margin-left: 1000px;
     width: 33px;
@@ -6,18 +6,18 @@
     top: 12px;
 }
 
-.items{
+.items {
     padding-right: 15px;
     padding-left: 25px;
 }
 
-.container img{
+.container img {
     position: absolute;
     right: 0px;
     height: 605px;
-    width:1373px;
+    width: 1373px;
 }
 
-.dropdown{
+.dropdown {
     margin-left: 110px;
 }
