@@ -18,6 +18,7 @@ class Login_controller extends CI_Controller{
 			'username' => $username,
 			'password' => md5($password)
 			);
+		$_SESSION['username'] = $username;
 		$cek = $this->LoginModel->cek_login("user",$where)->num_rows();
 		if($cek > 0){
 
