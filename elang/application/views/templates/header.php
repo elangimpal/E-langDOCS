@@ -139,11 +139,17 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="regisModalLabel"><b>FORM DAFTAR</b></h5>
+                    <h5 class="modal-title" id="exampleModalLabel">FORM DAFTAR</h5>
+                    <button type="button" class="close" id="closeicon" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
                 </div>
-                <div class="modal-body bodyRegis">
-                    <form action="<?= base_url('index.php/Profile_controller/tambah_aksi') ?>" method="POST">
-                        <div id="formUsername" class="form-group form-inline">
+                <div class="modal-body">
+                    <form action="<?= base_url("index.php/Register_Controller/register_handle") ?>" method="POST">
+                        <div id="formName" class="form-group">
+                            <input type="text" class="form-control" name="fullName" id="inputName" placeholder="Nama Lengkap">
+                        </div>
+                        <div id="formUsername" class="form-group">
                             <input type="text" class="form-control" name="username" id="inputUsername" placeholder="Username">
                         </div>
                         <div id="formName" class="form-group form-inline">
