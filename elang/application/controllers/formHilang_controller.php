@@ -52,7 +52,8 @@ class formHilang_controller extends CI_Controller {
 								'ciri_khusus' => $this->input->post('ciriKhusus'),
 								'petunjuk' => $this->input->post('petunjuk'),
 								'foto' => $namafile,
-								'status_barang' => 0
+								'status_barang' => 0,
+								'jenis' => 0
 					);
                 }else{
 					// echo "GAGAL".$_FILES['file']['name'];

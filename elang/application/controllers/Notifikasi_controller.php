@@ -3,16 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Notifikasi_controller extends CI_Controller {
 
-	public function ___construct(){
-		parent::__construct();
-	}
 
 	public function index()
 	{
-		$this->load->view('Notifikasi');
+		$data['barang']=  $this->db->get('barang')->result_array();
+		$this->load->view('Notifikasi',$data);
 	}
 
-	public function h()
+	public function getNotif()
 	{
 		$this->load->view('Notifikasi');
 	}

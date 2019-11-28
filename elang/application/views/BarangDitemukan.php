@@ -29,27 +29,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Modul APPL</td>
-                                        <td>Buku</td>
-                                        <td>LABIF 03</td>
-                                        <td>01 - 03 - 2019</td>
-                                        <td style="color:green">DIKLAIM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>HP Samsung A10s</td>
-                                        <td>Gadget</td>
-                                        <td>MSU</td>
-                                        <td>10 - 02 - 2019</td>
-                                        <td style="color:green">DIKLAIM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dompet</td>
-                                        <td>Lain-lain</td>
-                                        <td>GKU</td>
-                                        <td>05 - 01 - 2019</td>
-                                        <td style="color:green">DIKLAIM</td>
-                                    </tr>
+                                    <?php foreach ($barang as $b) { ?>
+                                    <!-- jenis == 1 : kalau barang ditemukan, jenis == 0 : kalau barang hilang -->
+                                        <?php if (($b['jenis']== 1  && $b['username']== $this->session->userdata("nama")) || (($b['status_barang']== 1  && $b['penemuBarang']== $this->session->userdata("nama")))) {?> 
+                                        <tr>
+                                            <td><?= $b['nama_barang'] ?></td>
+                                            <td> <?= $b['kategori'] ?></td>
+                                            <td><?= $b['lokasi'] ?></td>
+                                            <td><?= $b['tanggal'] ?></td>
+                                            <td style="color:black"><?php if($b['status_barang']==1){echo "Diklaim";}else{echo "Belum Diklaim";}; ?></td>
+                                        </tr>
+                                        <?php }?>
+                                    <?php }?>
                                 </tbody>
                             </table>
                         </form>

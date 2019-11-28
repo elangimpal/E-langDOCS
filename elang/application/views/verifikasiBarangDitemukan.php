@@ -58,22 +58,25 @@
             <div class="row">
               <div class="col-4">
                 <div class="pl-3">
-                  <img  src="<?= base_url('assets/img/ktmh_c.png')?>" class="ktm-size ml-1">
+                  <img  src="<?= base_url('/img/'); echo $barang[0]['foto'];  ?>" class="ktm-size ml-1">
                 </div>
               </div>
               <div class="col-8">
                 <div>
-                  <a class="font-weight-bold" style="font-size : 18px;">Kartu Tanda Mahasiswa</a><br>
+                  <a class="font-weight-bold" style="font-size : 18px;"><?= $barang[0]['nama_barang']; ?></a><br>
                 </div>
                 <div class="mt-1">
-                  <span> <img src="<?= base_url('assets/icon/i-loc.svg')?>" class="mr-1"><a style="font-size : 13px;">GKU KU1.03.03</a></span><br>
-                  <span> <img src="<?= base_url('assets/icon/i-calendar.svg')?>" class="mr-1"><a style="font-size : 13px;">10 Oktober 2019</a></span><br>
-                  <a style="font-size : 13px;">Kategori: <span>Kartu</span></a><br>
-                  <a style="font-size : 13px;">Status  : <span>HILANG</span></a><br>
+                  <span> <img src="<?= base_url('assets/icon/i-loc.svg')?>" class="mr-1"><a style="font-size : 13px;"><?= $barang[0]['lokasi'];  ?></a></span><br>
+                  <span> <img src="<?= base_url('assets/icon/i-calendar.svg')?>" class="mr-1"><a style="font-size : 13px;"><?= $barang[0]['tanggal'];  ?></a></span><br>
+                  <a style="font-size : 13px;">Kategori: <span><?= $barang[0]['kategori']  ?></span></a><br>
+                  <a style="font-size : 13px;">Status  : <span>
+                  <?php if ($barang[0]['status_barang'] == 0) { echo "HILANG";  ?>
+                    <?php }else{ echo "DITEMUKAN"; }?> 
+                  </span></a><br>
                </div>
                 <div class="mt-3">
-                  <a class="font-weight-bold" style="font-size : 14px;">DESKRIPSI</a><br>
-                  <a style="font-size : 13px;">Kehilangan KTM sekitar pukul 16:30 setelah kelas Kalkulus IIB. Kemungkinan lokasi hilang di bangku-bangku bagian belakang. Terdapat strap berwarna kuning dengan motif pisang.</a><br>
+                <a class="font-weight-bold" style="font-size : 14px;">DESKRIPSI</a><br>
+                  <a style="font-size : 13px;"><?= $barang[0]['deskripsi'] ?></a><br>
                </div>
                <div class="mt-3">
                   <a class="font-weight-bold font-italic" style="font-size : 14px;">PERHATIKAN KOTAK KUNING YANG MENUTUPI KOMPONEN DALAM FOTO BARANG</a><br>
@@ -83,22 +86,22 @@
             <div class="row">
               <div class="pl-3 mt-3 " style="font-size : 13px;">
                 Masukkan nilai dari komponen tersebut dibawah ini untuk verifikasi penemuan barang
-                <form>
+                <form method="post" action="<?= base_url('index.php/detailBarang_controller/verifbarang_handle/'); echo $this->session->userdata("nama"); ?>">
                   <div class="form-group">
-                    <input type="text" class="form-control col-4 bg-light border border-dark" style="font-size : 13px;">
+                    <input type="text" class="form-control col-4 bg-light border border-dark" style="font-size : 13px;" name="ciri_khusus">
+                    <input type="text" value=<?= $barang[0]['id_barang'] ?> hidden name="id_barang">
+                    <input type="text" value=<?= $barang[0]['username'] ?> hidden name="username">
+
                     <label style="font-size : 11px;">Petunjuk: NIM</label>
                   </div>
-                </form>
               </div>
             </div>
             <div class="row">
               <div class="col-4">
               </div>
               <div class="col-8">
-              <a href="<?= base_url('index.php/verifikasiBarangDS')?>">
-                <button type="button" class="btn btn1-elang btn-md btn-block text-white shadow">SAYA MENEMUKANNYA</button>
-              </a>
-                
+                <button type="submit" class="btn btn1-elang btn-md btn-block text-white shadow">SAYA MENEMUKANNYA</button>
+                </form>
               </div>
             </div>
           </div>

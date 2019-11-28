@@ -22,4 +22,9 @@ class ProfileModel extends CI_Model{
 		$this->db->where($where);
 		$this->db->update($table,$data);
 	}	
+
+	function get_data_by_username($username, $table){
+		$this->db->where('username',$username);
+		return $this->db->get($table)->result_array();
+	}
 }
