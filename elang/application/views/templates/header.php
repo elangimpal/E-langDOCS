@@ -142,34 +142,34 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">FORM DAFTAR</h5>
                     <button type="button" class="close" id="closeicon" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <form action="<?= base_url("index.php/Register_Controller/register_handle") ?>" method="POST">
                         <div id="formName" class="form-group">
-                            <input type="text" class="form-control" name="fullName" id="inputName" placeholder="Nama Lengkap">
+                            <input type="text" class="form-control" name="fullName" id="inputName" placeholder="Nama Lengkap" required>
                         </div>
                         <div id="formUsername" class="form-group">
-                            <input type="text" class="form-control" name="username" id="inputUsername" placeholder="Username">
+                            <input type="text" class="form-control" name="username" id="inputUsername" placeholder="Username" required>
                         </div>
                         <div id="formEmail" class="form-group">
-                            <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email">
+                            <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" required>
                         </div>
                         <div id="formHandphone" class="form-group">
-                            <input type="text" class="form-control" name="handphone" id="inputHandphone" placeholder="No. Handphone">
+                            <input type="tel" class="form-control" name="handphone" id="inputHandphone" placeholder="No. Handphone" pattern="[0-9]{12}" required>
                         </div>
                         <div id="formLahir" class="form-group">
-                            <input type="text" class="form-control" name="tglahir" id="inputTglahir" placeholder="Tanggal Lahir">
+                            <input type="date" class="form-control" name="tglahir" id="inputTglahir" placeholder="Tanggal Lahir" required>
                         </div>
                         <div id="formAlamat" class="form-group">
-                            <input type="text" class="form-control" name="alamat" id="inputAlamat" placeholder="Alamat">
+                            <input type="text" class="form-control" name="alamat" id="inputAlamat" placeholder="Alamat" required>
                         </div>
                         <div id="formPassword" class="form-group">
-                            <input type="password" class="form-control" name="password" id="inputPassword1" placeholder="Password">
+                            <input type="password" class="form-control" name="password" id="inputPassword1" placeholder="Password" required>
                         </div>
                         <div id="formPassword2" class="form-group">
-                            <input type="password" class="form-control" name="password_conf" id="inputPassword2" placeholder="Konfirmasi Password">
+                            <input type="password" class="form-control" name="password_conf" id="inputPassword2" placeholder="Konfirmasi Password" required>
                         </div>
                         <center>
                             <div id="terms">

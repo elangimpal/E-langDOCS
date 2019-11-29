@@ -160,6 +160,8 @@
                                 <option value="buku">Buku</option>
                                 <option value="kartuAtm">Kartu ATM</option>
                                 <option value="kartuID">Kartu Identitas</option>
+                                <option value="tas">Tas</option>
+                                <option value="dompet">Dompet</option>
                             </select>
                         </div>
                     </div>
