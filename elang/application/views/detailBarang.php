@@ -56,35 +56,35 @@
             <div class="row">
               <div class="col-4">
                 <div class="pl-3">
-                  <img  src="<?= base_url('assets/img/ktmh_c.png')?>" class="ktm-size ml-1">
+                  <img  src="<?= base_url('/img/'); echo $barang[0]['foto'];  ?>" class="ktm-size ml-1">
                 </div>
-                <div class="mt-4">
-                  <a style="font-size : 13px;">Bagikan ke</a><br>
-                  <span><img src="<?= base_url('assets/icon/i-ig.svg')?>" class="mr-2"><img src="<?= base_url('assets/icon/i-fb.svg')?>" class="mr-2"><img src="<?= base_url('assets/icon/i-twitter.svg')?>" class="mr-2"><img src="<?= base_url('assets/icon/i-googleplus.svg')?>" class="mr-2"></span>
-                </div>
+               
               </div>
               <div class="col-8">
                 <div>
-                  <a class="font-weight-bold" style="font-size : 18px;">Kartu Tanda Mahasiswa</a><br>
+                  <a class="font-weight-bold" style="font-size : 18px;"><?= $barang[0]['nama_barang']; ?></a><br>
                 </div>
                 <div class="mt-1">
-                  <span> <img src="<?= base_url('assets/icon/i-loc.svg')?>" class="mr-1"><a style="font-size : 13px;">GKU KU1.03.03</a></span><br>
-                  <span> <img src="<?= base_url('assets/icon/i-calendar.svg')?>" class="mr-1"><a style="font-size : 13px;">10 Oktober 2019</a></span><br>
-                  <a style="font-size : 13px;">Kategori: <span>Kartu</span></a><br>
-                  <a style="font-size : 13px;">Status  : <span>HILANG</span></a><br>
+                  <span> <img src="<?= base_url('assets/icon/i-loc.svg')?>" class="mr-1"><a style="font-size : 13px;"><?= $barang[0]['lokasi'];  ?></a></span><br>
+                  <span> <img src="<?= base_url('assets/icon/i-calendar.svg')?>" class="mr-1"><a style="font-size : 13px;"><?= $barang[0]['tanggal'];  ?></a></span><br>
+                  <a style="font-size : 13px;">Kategori: <span><?= $barang[0]['kategori']  ?></span></a><br>
+                  <a style="font-size : 13px;">Status  : <span>
+                    <?php if ($barang[0]['status_barang'] == 0) { echo "HILANG";  ?>
+                    <?php }else{ echo "DITEMUKAN"; }?> 
+                  </span></a><br>
                </div>
                 <div class="mt-3">
                   <a class="font-weight-bold" style="font-size : 14px;">DESKRIPSI</a><br>
-                  <a style="font-size : 13px;">Kehilangan KTM sekitar pukul 16:30 setelah kelas Kalkulus IIB. Kemungkinan lokasi hilang di bangku-bangku bagian belakang. Terdapat strap berwarna kuning dengan motif pisang.</a><br>
+                  <a style="font-size : 13px;"><?= $barang[0]['deskripsi'] ?></a><br>
                </div>
                <div class="mt-3">
                   <a class="font-weight-bold" style="font-size : 14px;">DETAIL</a><br>
                   <div class="row">
                     <div class="col-8" style="font-size : 13px;">
                       <a>Ciri-Ciri:</a><br>
-                      <li>Tempat kartu berwarna kuning</li>
-                      <li>Tidak terdapat coretan</li>
-                      <li>Masih menggunakan tinta nyata</li>
+                      <li><?= $barang[0]['ciri-ciri']; ?></li>
+                      <!-- <li>Tidak terdapat coretan</li>
+                      <li>Masih menggunakan tinta nyata</li> -->
                     </div>
                     <!-- <div class="col-4" style="font-size : 13px;">
                       <a>Hilang Tanggal</a><br>
@@ -92,9 +92,18 @@
                     </div> -->
                   </div>
               </div>
-              <a href="<?= base_url('index.php/verifikasiBarangD')?>" >
-                <button type="button" class="btn btn1-elang mt-4 btn-md btn-block text-white shadow" href="#">SAYA MENEMUKANNYA</button>
-              </a>
+              <?php if ($barang[0]['status_barang'] == 0 && $barang[0]['jenis'] == 0){?>
+                <a href="<?= base_url('index.php/detailBarang_controller/verifikasiBarangD/'.$barang[0]['id_barang'])?>" >
+                  <button type="button" class="btn btn1-elang mt-4 btn-md btn-block text-white shadow">SAYA MENEMUKANNYA</button>
+                </a>
+              <?php }else if($barang[0]['status_barang'] == 0 && $barang[0]['jenis'] == 1){?>
+                <a href="<?= base_url('index.php/detailBarang_controller/verifikasiBarangD/'.$barang[0]['id_barang'])?>" >
+                  <button type="button" class="btn btn1-elang mt-4 btn-md btn-block text-white shadow">MILIK SAYA</button>
+                </a>
+              <?php }else if($barang[0]['status_barang'] == 1){?>
+                  <button type="button" class="btn btn1-elang mt-4 btn-md btn-block text-white shadow">TELAH DITEMUKAN</button>
+              <?php }?>
+              
                 <!-- -->
               </div>
               </div>

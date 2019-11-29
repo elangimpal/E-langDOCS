@@ -29,22 +29,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                        <tr>
-                                            <td> <a href="<?= base_url('index.php/verifikasiBarangD')?>">KTM</a></td>
-                                            <td>Kartu</td>
-                                            <td>Situ techno</td>
-                                            <td>16 - 02 - 2019</td>
-                                            <td style="color:red">HILANG</td>
-                                            
-                                        </tr>
-                                    
-                                    <tr>
-                                        <td>Binder</td>
-                                        <td>Buku</td>
-                                        <td>Kantin Teknik</td>
-                                        <td>01 - 01 - 2019</td>
-                                        <td style="color:green">DITEMUKAN</td>
-                                    </tr>
+                                    <?php foreach ($barang as $b) { ?>
+                                        <!-- jenis == 1 : kalau barang ditemukan, jenis == 0 : kalau barang hilang -->
+                                            <?php if ($b['jenis']== 0 && $b['username']== $this->session->userdata("nama")) {?> 
+                                            <tr>
+                                                <td><?= $b['nama_barang'] ?></td>
+                                                <td> <?= $b['kategori'] ?></td>
+                                                <td><?= $b['lokasi'] ?></td>
+                                                <td><?= $b['tanggal'] ?></td>
+                                                <td style="color:black"><?php if($b['status_barang']==1){echo "Diklaim";}else{echo "Belum Diklaim";}; ?></td>
+                                            </tr>
+                                            <?php }?>
+                                        <?php }?>
                                 </tbody>
                             </table>
                         </form>

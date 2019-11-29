@@ -126,18 +126,21 @@
             <!-- result -->
             <div class="col-8 col-push-4 p-5">
             <div class="row pt-4">
+                            <?php foreach($barang as $row){?>
                                 <div class="col-sm bg-white ml-4 box-of ">
                                     <div>
-                                        <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
+                                        <img class="col-12 pt-4 pkantin-of " src="../img/<?= $row->foto?>">
                                     </div>
                                     <div class="pt-3 pb-3">
-                                        <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
-                                        <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
+                                        <span class="font-weight-bold font18-of" id="judul"><?= $row->nama_barang?></span> <br><span class="font14-of fontc-6-of" id="status">
+                                            <?php if($row->jenis == 1){?><span>Ditemukan</span>
+                                            <?php }else{?><span>Hilang</span><?php } ?> </span><br>
                                         <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Tokong Nanas
+                                            <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;"><?= $row->lokasi?>
                                         </span>
                                     </div>
                                 </div>
+                            <?php } ?>
                                 <div class="col-sm bg-white ml-4 box-of ">
                                     <div>
                                         <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
@@ -146,7 +149,7 @@
                                         <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
                                         <span class="font14-of fontc-6-of" id="status">Ditemukan </span><br>
                                         <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Panambulai
+                                            <img src="img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Panambulai
                                         </span>
                                     </div>
                                 </div>
@@ -158,7 +161,7 @@
                                         <span class="font-weight-bold font18-of" id="judul">Modul PBO</span> <br>
                                         <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
                                         <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Ged. F
+                                            <img src="img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Ged. F
 
                                         </span>
                                     </div>

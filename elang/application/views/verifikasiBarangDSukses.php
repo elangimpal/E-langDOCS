@@ -56,22 +56,24 @@
             <div class="row">
               <div class="col-4">
                 <div class="pl-3">
-                  <img  src="<?= base_url('assets/img/ktmh_c.png')?>" class="ktm-size ml-1">
+                  <img  src="<?= base_url('/img/'); echo $barang[0]['foto']; ?>" class="ktm-size ml-1">
                 </div>
               </div>
               <div class="col-8">
                 <div>
-                  <a class="font-weight-bold" style="font-size : 18px;">Kartu Tanda Mahasiswa</a><br>
+                  <a class="font-weight-bold" style="font-size : 18px;"><?= $barang[0]['nama_barang']; ?></a><br>
                 </div>
                 <div class="mt-1">
-                  <span> <img src="<?= base_url('assets/icon/i-loc.svg')?>" class="mr-1"><a style="font-size : 13px;">GKU KU1.03.03</a></span><br>
-                  <span> <img src="<?= base_url('assets/icon/i-calendar.svg')?>" class="mr-1"><a style="font-size : 13px;">10 Oktober 2019</a></span><br>
-                  <a style="font-size : 13px;">Kategori: <span>Kartu</span></a><br>
-                  <a style="font-size : 13px;">Status  : <span>HILANG</span></a><br>
+                  <span> <img src="<?= base_url('assets/icon/i-loc.svg')?>" class="mr-1"><a style="font-size : 13px;"><?= $barang[0]['lokasi'];  ?></a></span><br>
+                  <span> <img src="<?= base_url('assets/icon/i-calendar.svg')?>" class="mr-1"><a style="font-size : 13px;"><?= $barang[0]['tanggal'];  ?></a></span><br>
+                  <a style="font-size : 13px;">Kategori: <span><?= $barang[0]['kategori'] ?></span></a><br>
+                  <a style="font-size : 13px;">Status  : <span>
+                  <?php if ($barang[0]['status_barang'] == 0) { echo "HILANG";  ?>
+                    <?php }else{ echo "DITEMUKAN"; }?> </span></a><br>
                </div>
                 <div class="mt-3">
                   <a class="font-weight-bold" style="font-size : 14px;">DESKRIPSI</a><br>
-                  <a style="font-size : 13px;">Kehilangan KTM sekitar pukul 16:30 setelah kelas Kalkulus IIB. Kemungkinan lokasi hilang di bangku-bangku bagian belakang. Terdapat strap berwarna kuning dengan motif pisang.</a><br>
+                  <a style="font-size : 13px;"><?= $barang[0]['deskripsi'] ?></a><br>
                </div>
               </div>
             </div>
@@ -85,8 +87,8 @@
             <div class="row">
               <div class="col-4 mt-3">
                 <a class="font-weight-bold" style="font-size : 14px;">DESKRIPSI</a><br>
-                <a style="font-size : 13px;">Nama : <span>Ciara</span></a><br>
-                <a style="font-size : 13px;">No HP : <span>08123321456</span></a><br>
+                <a style="font-size : 13px;">Nama : <span><?= $user[0]['nama'];  ?></span></a><br>
+                <a style="font-size : 13px;">No HP : <span><?= $user[0]['no_handphone'];  ?></span></a><br>
               </div>
               <div class="col-8">
               </div>

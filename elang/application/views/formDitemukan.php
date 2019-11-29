@@ -89,6 +89,7 @@
             
         <!-- ini main/body -->
         <div class="main">
+        <?php echo $this->session->flashdata('message'); ?>
             <div class="d-flex" style="width:900px; height:130px; margin-left:390px; margin-top:60px">
                 <div class="txt">
                     <h2>Input Penemuan Barang</h2>
