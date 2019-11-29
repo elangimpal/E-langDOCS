@@ -57,6 +57,11 @@
               <div class="col-4">
                 <div class="pl-3">
                   <img  src="<?= base_url('/img/'); echo $barang[0]['foto'];  ?>" class="ktm-size ml-1">
+                  <div class="col-12">
+                    <a href="<?= base_url('index.php/SearchResult') ?>">
+                      <button type="button" class="btn btn1-elang btn-md btn-block text-white shadow btn-back" style="background-color: grey;margin-top:14px">Kembali</button>
+                    </a>
+                  </div>
                 </div>
                
               </div>
@@ -93,15 +98,24 @@
                   </div>
               </div>
               <?php if ($barang[0]['status_barang'] == 0 && $barang[0]['jenis'] == 0){?>
-                <a href="<?= base_url('index.php/detailBarang_controller/verifikasiBarangD/'.$barang[0]['id_barang'])?>" >
-                  <button type="button" class="btn btn1-elang mt-4 btn-md btn-block text-white shadow">SAYA MENEMUKANNYA</button>
-                </a>
+             
+                    <a href="<?= base_url('index.php/detailBarang_controller/verifikasiBarangD/'.$barang[0]['id_barang'])?>" >
+                    <button type="button" class="btn btn1-elang mt-4 btn-md btn-block text-white shadow">SAYA MENEMUKANNYA</button>
+                  </a>
+                
               <?php }else if($barang[0]['status_barang'] == 0 && $barang[0]['jenis'] == 1){?>
-                <a href="<?= base_url('index.php/detailBarang_controller/verifikasiBarangD/'.$barang[0]['id_barang'])?>" >
-                  <button type="button" class="btn btn1-elang mt-4 btn-md btn-block text-white shadow">MILIK SAYA</button>
-                </a>
+              
+                
+                    <a href="<?= base_url('index.php/detailBarang_controller/verifikasiBarangD/'.$barang[0]['id_barang'])?>" >
+                    <button type="button" class="btn btn1-elang mt-4 btn-md btn-block text-white shadow">MILIK SAYA</button>
+                    </a>
+                  
+                
+                
               <?php }else if($barang[0]['status_barang'] == 1){?>
+                
                   <button type="button" class="btn btn1-elang mt-4 btn-md btn-block text-white shadow">TELAH DITEMUKAN</button>
+                  
               <?php }?>
               
                 <!-- -->
