@@ -21,8 +21,7 @@ class Dashboard_controller extends CI_Controller {
 	public function search(){
 		$this->load->model('barangModel');
 		$keyword = $this->input->post('keyword');
-		$data['barang']=$this->barangModel->get_product_keyword($keyword);
-		// $this->load->view('searchResult1',$data);
+		$data['barang'] = $this->barangModel->get_product_keyword($keyword);
 		$this->load->view('hasilPencarian',$data);
 	}
 

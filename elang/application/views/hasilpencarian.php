@@ -78,7 +78,7 @@
     </nav>
 
     <!-- navbar selesai -->
-    
+
     <!-- SIDE BAR -->
     <?php $this->load->view('templates/sidebar') ?>
 
@@ -86,42 +86,44 @@
     <!-- SIDE BAR END -->
     <!-- FILTER SORT  -->
     <div class="search-field shadow-sm bg-white br-e" style="margin: 100px 100px 0px 320px; padding: 20px 80px 20px 50px;">
-        <form class="search-form" action="#">
+        <form class="search-form"  action="<?= base_url('index.php/searchResult_controller/search') ?>" method="post">
             <div class="row">
             <div class="col-lg-3 col-md-6 col-xs-6" >
-            <input class="form-control input-group my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
-
+            <input class="form-control input-group my-0 py-1 red-border" type="text" placeholder="Search"  name="keyword" aria-label="Search">
                 </div>
                 <div class="col-lg-2 col-md-6 col-xs-6" >
                     <select name="location" id="lokasi" class="app-select form-control" required="">
                         <option data-display="Lokasi">Lokasi</option>
-                        <option value="1">Sukabirus</option>
-                        <option value="2">Sukapura</option>
+                        <option value="sukbir">Sukabirus</option>
+                        <option value="Sukapura">Sukapura</option>
                         <option value="3">G. Tokong Nanas</option>
                     </select>
                 </div>
                 <div class="col-lg-2 col-md-6 col-xs-6">
-                    <select name="property-type" id="kategori" class="app-select form-control" required="">
+                    <select name="kategori" class="app-select form-control" required="">
                         <option data-display="Kategori">Kategori</option>
-                        <option value="1">Kartu identitas</option>
-                        <option value="2">Tas</option>
-                        <option value="3">Dompet</option>
+                        <option value="kartuID">Kartu identitas</option>
+                        <option value="kartuATM">Kartu ATM</option>
+                        <option value="tas">Tas</option>
+                        <option value="dompet">Dompet</option>
+                        <option value="buku">Buku</option>
+                        <option value="tas">Tas</option>
                     </select>
                 </div>
                 <div class="col-lg-2 col-md-6 col-xs-6">
-                    <select name="property-type" id="jenis" class="app-select form-control" required="">
+                    <select name="jenis" class="app-select form-control" required="">
                         <option data-display="Jenis">Jenis</option>
-                        <option value="1">Kehilangan</option>
-                        <option value="2">Ditemukan</option>
+                        <option value="0">Kehilangan</option>
+                        <option value="1">Ditemukan</option>
                     </select>
                 </div>
-                <div class="col-lg-2 col-md-6 col-xs-6">
-                    <select name="bedroom" id="urutkan" class="app-select form-control" required="">
+                <!-- <div class="col-lg-2 col-md-6 col-xs-6">
+                    <select name="bedroom" class="app-select form-control" required="">
                         <option data-display="Urutkan">Urutkan</option>
                         <option value="1">Tebaru</option>
                         <option value="2">A-Z</option>
                     </select>
-                </div>
+                </div> -->
                 <div>
                     <button class="btn-lgt">Search</button>
                 </div>

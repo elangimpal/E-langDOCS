@@ -46,7 +46,7 @@
     <div id="modalPassword" class="modal fade">
         <div class="modal-dialog modal-login modal-sm" style="margin-top: 14%;">
             <div class="modal-content">
-                <form action="#" method="post">
+                <form  action="<?= base_url('index.php/Profile_controller/changePassword') ?>" method="post">
                     <div class="modal-header">
                         <h4 class="modal-title" style="margin-left: 15%;">Ganti kata sandi</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -54,11 +54,11 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label>Kata sandi lama</label>
-                            <input type="password" class="form-control" required="required">
+                            <input type="password" class="form-control" required="required" name="password">
                         </div>
                         <div class="form-group">
                             <label>Kata sandi baru</label>
-                            <input type="password" class="form-control" required="required">
+                            <input type="password" class="form-control" required="required" name="newpass">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -80,7 +80,6 @@
                     <div class="text-block text-center">
                         <img src="<?= base_url('assets/img/profile/profile-pic.jpg') ?>" alt="Avatar" class="avatar" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); width: 75px; height: 75px; border-radius: 50%; margin-right: 38%; margin-top: 10%;">
                         <br><br><br><br>
-                        <!-- $data['user'] = $this->db->where('username', $username); -->
                         <?php foreach($datauser->result() as $row): ?>
                         <h5 style="color: cadetblue; margin-top: 20px;"><?php echo $this->session->userdata("nama"); ?></h5>
                         <span><?php echo $row->nama;?></span><br>
