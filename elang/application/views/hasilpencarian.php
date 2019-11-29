@@ -136,7 +136,7 @@
         <?php foreach($barang as $row){?>
             <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
                 <div>
-                    <img class="col-12 pt-4 pkantin-of img-card" src="../img/<?= $row->foto?>">
+                    <img class="col-12 pt-4 pkantin-of img-card" src="<?= base_url() ?>/img/<?= $row->foto?>">
                 </div>
                 <div class="pt-3 pb-3">
                     <a href="<?= base_url('index.php/detailBarang_controller/detailBarang/'); echo $row->id_barang?>">

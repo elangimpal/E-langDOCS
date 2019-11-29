@@ -38,7 +38,8 @@ class Dashboard_controller extends CI_Controller {
 		$this->load->model('barangModel');
 		$keyword = $this->input->post('keyword');
 		$data['barang']=$this->barangModel->get_product_keyword($keyword);
-		$this->load->view('searchResult1',$data);
+		// $this->load->view('searchResult1',$data);
+		$this->load->view('hasilPencarian',$data);
 	}
 
 
