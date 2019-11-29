@@ -75,7 +75,7 @@
                         </li>
                     </li>
                     <li class="nav-item items">
-                        <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>
+                        <a class="nav-link" href="<?= base_url('index.php/Faq') ?>" style="color:white"><b>FAQ</b></a>
                     </li>
             </ul>
     </nav>

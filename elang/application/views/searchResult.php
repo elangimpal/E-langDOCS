@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/font-awesome.min.css">
     <link rel="stylesheet" href="assets/owl.carousel.css">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="<?= base_url(); ?>/assets/button-file.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>assets/button-file.css">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -36,155 +36,85 @@
 
 
 </head>
+<style>
+  .br-e{
+    border-radius: 15px;
+  }
+
+</style>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#11212E">
-        <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">
-            <img src="<?= base_url('assets/img/logo.png') ?>" alt="logo" style="width:40px;">
-        </a>
-
-        <!-- Links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="font-size:18px; color:white"><b>E-LANG</b></a>
-            </li>
-        </ul>
-
-        <ul class="navbar-nav nav-right">
-            <li class="nav-item items">
-                <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white">
-                    <b>Shahnaz</b>
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="<?= base_url('index.php/Profile') ?>">Edit Profil</a>
-                    <a class="dropdown-item" href="<?= base_url('index.php/Home') ?>">Keluar</a>
+    <!-- manggil navbar -->
+    <?php $this->load->view('templates/header') ?>
+    <!-- navbar selesai -->
+    <!-- FILTER SORT  -->
+    <div class="search-field shadow-sm bg-white br-e" style="margin: 100px 100px 0px 120px; padding: 20px 80px 20px 50px;">
+        <form class="search-form" action="#">
+            <div class="row">
+            <div class="col-lg-3 col-md-6 col-xs-6" >
+            <input class="form-control input-group my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
                 </div>
-            </li>
-            </li>
-            <li class="nav-item items">
-                <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Hero section -->
-    <div>
-        <!-- <div class="hero-text"> -->
-        <div class="row">
-            <!-- filter -->
-            <div class="col-4 col-push-8 p-5">
-                <div class="container" id="filter">
-
-
-                    <!-- lokasi -->
-                    <form action="/action_page.php">
-                        <h5>Filter</h5>
-                        <div class="form-inline">
-                            <input class="form-control input-group my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
-                            <div class="input-group-append">
-                                <span class="input-group-text" id="basic-text1"><img src="<?= base_url() ?>img/zoom-out.svg" style=""></span>
-                            </div>
-                        </div>
-                        <div class="form-inline">
-                            <label for="selLok">Lokasi</label>
-                            <select class="form-control" id="selLok" name="selLok">
-                                <option>Semua</option>
-                                <option>Telkom University</option>
-                                <option>Tokong Nanas</option>
-                                <option>GSG</option>
-                            </select>
-                        </div>
-                        <br>
-                        <!-- Kategori -->
-                        <div class="form-inline">
-                            <label for="selKat">Kategori</label>
-                            <select class="form-control" id="selKat" name="selKat">
-                                <option>Semua</option>
-                                <option>Buku</option>
-                                <option>Kartu Identitas</option>
-                                <option>Tas</option>
-                            </select>
-                        </div>
-                        <br>
-                        <!-- jenis -->
-                        <div class="form-inline">
-                            <label for="selJenis">Jenis</label>
-                            <select class="form-control" id="selJEnis" name="selJenis">
-                                <option>Semua</option>
-                                <option>Kehilangan</option>
-                                <option>Menemukan</option>
-                            </select>
-                        </div>
-                        <br>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                <div class="col-lg-2 col-md-6 col-xs-6" >
+                    <select name="location" id="lokasi" class="app-select form-control" required="">
+                        <option data-display="Lokasi">Lokasi</option>
+                        <option value="1">Sukabirus</option>
+                        <option value="2">Sukapura</option>
+                        <option value="3">G. Tokong Nanas</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-md-6 col-xs-6">
+                    <select name="property-type" id="kategori" class="app-select form-control" required="">
+                        <option data-display="Kategori">Kategori</option>
+                        <option value="1">Kartu identitas</option>
+                        <option value="2">Tas</option>
+                        <option value="3">Dompet</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-md-6 col-xs-6">
+                    <select name="property-type" id="jenis" class="app-select form-control" required="">
+                        <option data-display="Jenis">Jenis</option>
+                        <option value="1">Kehilangan</option>
+                        <option value="2">Ditemukan</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-md-6 col-xs-6">
+                    <select name="bedroom" id="urutkan" class="app-select form-control" required="">
+                        <option data-display="Urutkan">Urutkan</option>
+                        <option value="1">Tebaru</option>
+                        <option value="2">A-Z</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="btn-lgt">Search</button>
                 </div>
             </div>
-            <!-- result -->
-            <div class="col-8 col-push-4 p-5">
-            <div class="row pt-4">
-                            <?php foreach($barang as $row){?>
-                                <div class="col-sm bg-white ml-4 box-of ">
-                                    <div>
-                                        <img class="col-12 pt-4 pkantin-of " src="../img/<?= $row->foto?>">
-                                    </div>
-                                    <div class="pt-3 pb-3">
-                                        <span class="font-weight-bold font18-of" id="judul"><?= $row->nama_barang?></span> <br><span class="font14-of fontc-6-of" id="status">
-                                            <?php if($row->jenis == 1){?><span>Ditemukan</span>
-                                            <?php }else{?><span>Hilang</span><?php } ?> </span><br>
-                                        <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="<?= base_url() ?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;"><?= $row->lokasi?>
-                                        </span>
-                                    </div>
-                                </div>
-                            <?php } ?>
-                                <div class="col-sm bg-white ml-4 box-of ">
-                                    <div>
-                                        <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
-                                    </div>
-                                    <div class="pt-3 pb-3">
-                                        <span class="font-weight-bold font18-of" id="judul">Kartu Tanda Mahasiswa</span> <br>
-                                        <span class="font14-of fontc-6-of" id="status">Ditemukan </span><br>
-                                        <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Gedung Panambulai
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-sm bg-white  ml-4 box-of ">
-                                    <div>
-                                        <img class="col-12 pt-4 pkantin-of " src="../assets/img/p-kantin1.jpg">
-                                    </div>
-                                    <div class="pt-3 pb-3">
-                                        <span class="font-weight-bold font18-of" id="judul">Modul PBO</span> <br>
-                                        <span class="font14-of fontc-6-of" id="status">Hilang </span><br>
-                                        <span class="font14-of fontc-6-of" id="lokasi">
-                                            <img src="img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;">Ged. F
+        </form>
+    </div>
 
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
+    <!-- FILTER SORT END -->
+<hr >
+    <!-- RESULT -->
+    <div class="result" style="margin: 0px 8px 20px 20px;"> 
+        <div class="row col res">
+        <?php foreach($barang as $row){?>
+            <div class="col-sm ml-4 shadow-sm p-3 bg-white br-e" onclick="">
+                <div>
+                    <img class="col-12 pt-4 pkantin-of img-card" src="<?= base_url() ?>/img/<?= $row->foto?>">
                 </div>
-                <!-- </div> -->
-                <!-- </section> -->
-                <!-- Hero section end -->
+                <div class="pt-3 pb-3">
+                    <a href="<?= base_url('index.php/detailBarang_controller/detailBarang/'); echo $row->id_barang?>">
+                    <span class="font-weight-bold font18-of" id="judul"><?= $row->nama_barang?></span> <br>
+                    </a>
+                    <span class="font14-of fontc-6-of" id="status"><?php if($row->jenis == 1){?><span>Ditemukan</span><?php }else{?><span>Hilang</span><?php } ?> </span><br>
+                    <span class="font14-of fontc-6-of" id="lokasi">
+                        <img src="<?= base_url()?>img/map-pin.svg" style="max-width: 16px; max-height: 16px; margin-right: 5px;"><?= $row->lokasi?>
+                    </span>
+                </div>
+            </div>
+        <?php } ?>
 
-
-
-                <!--====== Javascripts & Jquery ======-->
-                <script src="js/jquery.js" type="text/javascript"></script>
-                <script src="assets/js/jquery-3.2.1.min.js"></script>
-                <script src="js/bootstrap.js" type="text/javascript"></script>
-                <script src="assets/js/bootstrap.min.js"></script>
-                <script src="assets/js/mixitup.min.js"></script>
-                <script src="assets/js/circle-progress.min.js"></script>
-                <script src="assets/js/owl.carousel.min.js"></script>
-                <script src="assets/js/main.js"></script>
+    </div>
+    <!-- RESULT END -->
 
 </body>
-
 </html>

@@ -195,7 +195,7 @@
         <!-- Links -->
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#" style="font-size:18px; color:white"><b>E-LANG</b></a>
+                <a class="nav-link" href="<?= base_url('index.php/Home') ?>" style="font-size:18px; color:white"><b>E-LANG</b></a>
             </li>
         </ul>
 
@@ -209,7 +209,7 @@
                 <a class="nav-link trigger-btn" href="#myModalLogin" data-toggle="modal" style="color:white"><b>MASUK</b></a>
             </li>
             <li class="nav-item items">
-                <a class="nav-link" href="<?= base_url('index.php/Dashboard') ?>" style="color:white"><b>FAQ</b></a>
+                <a class="nav-link" href="<?= base_url('index.php/Faq') ?>" style="color:white"><b>FAQ</b></a>
             </li>
         </ul>
 
