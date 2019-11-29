@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/2f9cbdcc0a.js"></script>
 
     <!-- CSS SENDIRI -->
     <link href="img/lo.png" rel="shortcut icon" />
@@ -152,9 +153,6 @@
                         <div id="formUsername" class="form-group">
                             <input type="text" class="form-control" name="username" id="inputUsername" placeholder="Username">
                         </div>
-                        <div id="formName" class="form-group form-inline">
-                            <input type="text" class="form-control" name="fullName" id="inputName" placeholder="Nama Lengkap">
-                        </div>
                         <div id="formEmail" class="form-group">
                             <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email">
                         </div>
@@ -171,7 +169,7 @@
                             <input type="password" class="form-control" name="password" id="inputPassword1" placeholder="Password">
                         </div>
                         <div id="formPassword2" class="form-group">
-                            <input tyuype="password" class="form-control" name="password_conf" id="inputPassword2" placeholder="Konfirmasi Password">
+                            <input type="password" class="form-control" name="password_conf" id="inputPassword2" placeholder="Konfirmasi Password">
                         </div>
                         <center>
                             <div id="terms">

@@ -81,8 +81,9 @@
                         <img src="<?= base_url('assets/img/profile/profile-pic.jpg') ?>" alt="Avatar" class="avatar" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); width: 75px; height: 75px; border-radius: 50%; margin-right: 38%; margin-top: 10%;">
                         <br><br><br><br>
                         <!-- $data['user'] = $this->db->where('username', $username); -->
+                        <?php foreach($datauser->result() as $row): ?>
                         <h5 style="color: cadetblue; margin-top: 20px;"><?php echo $this->session->userdata("nama"); ?></h5>
-                        <span>Shahnaz Nur Asyifa</span><br>
+                        <span><?php echo $row->nama;?></span><br>
                     </div>
                     <hr>
                     <div class="text-block">
@@ -101,11 +102,8 @@
                     <div class="form-group"><br>
                         <h2 style="margin-left: 5%;">Profil</h2><br>
                         <div class="form-area" style="margin-left: 5%">
-                        <?php foreach($datauser->result() as $row): ?>
                             <label>Nama</label>
                             <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $row->nama;?>"><br>
-                            <label>Username</label>
-                            <input type="text" class="form-control" id="username" name="username" value="<?php echo $row->username;?>"><br>
                             <label>Email</label>
                             <input type="text" class="form-control" id="email" name="email" value="<?php echo $row->email;?>"><br>
                             <label>No. Ponsel</label>

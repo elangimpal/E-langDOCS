@@ -29,12 +29,11 @@
                     <h6 style="text-align: left">Lebih dari 100 barang telah dikembalikan</h6>
                 </div>
                 <div class="cari">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <a href="<?= base_url('index.php/SearchResult')?>">
-                            <button class="btn btn-outline-info my-2 my-sm-0" type="button">Search</button>
-                        </a>
-                        
+                    <form class="form-inline my-2 my-lg-0"  action="<?= base_url('index.php/Dashboard_controller/search') ?>" method="post">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="keyword">
+                        <!-- <a href="" > -->
+                            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                        <!-- </a> -->
                     </form>
                 </div>
             </div>

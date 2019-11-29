@@ -21,6 +21,7 @@
 
     .bg {
         /* The image used */
+        /* background-image: url("../assets/img/image.jpeg"); */
         background-image: url("assets/img/image.jpeg");
         /* Full height */
         height: 100%;
