@@ -36,23 +36,23 @@
                                             <tr>
                                                 <td>
                                                     <!-- <input type="checkbox" name="vehicle1" value="Bike"> Selamat datang -->
-                                                    <div class="col-sm-12 pt-4 p-2 bg-white border-bottom-0 border-top-0 shadow-sm" id="notif1">
+                                                    <div class="col-sm-12 pt-4 p-2 bg-white border-bottom-0 border-top-0 shadow-sm">
                                                         <!-- <input type="checkbox" name="vehicle1" value="semua"><div class="col-12"> -->
-                                                            <div class="alert alert-secondary" role="alert">
+                                                            <div class="alert alert-secondary" role="alert" data-dismiss="alert" aria-label="close">
                                                                 <a class="row">
                                                                 <?php if($b['jenis'] == 0) {?>
-                                                                    <div class="col-10" id="notif1">
+                                                                    <div class="col-10">
                                                                         <span><b><?= $b['penemuBarang'] ?></b></span><span>, </span><span class="fontc-3-of">telah menemukan </span><b><?= $b['nama_barang'] ?></b><span class="fontc-3-of"> Anda</span>
                                                                     </div>
                                                                     <div class="btn-group col-2 rounded-lg pl-3 " role="group" aria-label="Basic example">
-                                                                        <button type="button" id="hapusNotif" class="btn btn-info rounded-lg shadow-sm text-white font14-of" data-toggle="modal" data-target="#modalTampil">Hapus</button>
+                                                                        <button type="button" class="btn btn-info rounded-lg shadow-sm text-white font14-of" data-toggle="modal" data-target="#modalTampil">Hapus</button>
                                                                     </div>
                                                                 <?php }else{?>
                                                                     <div class="col-10">
                                                                         <span><b><?= $b['penemuBarang'] ?></b></span><span>, </span><span class="fontc-3-of">telah mengklaim </span><b><?= $b['nama_barang'] ?></b><span class="fontc-3-of"> Temuan anda</span>
                                                                     </div>
                                                                     <div class="btn-group col-2 rounded-lg pl-3 " role="group" aria-label="Basic example">
-                                                                        <button type="button" id="hapusNotif" class="btn btn-info rounded-lg shadow-sm text-white font14-of" data-toggle="modal" data-target="#modalTampil">Hapus</button>
+                                                                        <button type="button" class="btn btn-info rounded-lg shadow-sm text-white font14-of" data-toggle="modal" data-target="#modalTampil">Hapus</button>
                                                                     </div>
                                                                 <?php }?>
                                                                     

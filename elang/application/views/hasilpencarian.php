@@ -44,40 +44,41 @@
 </style>
 
 <body>
-    <!-- NAV -->
+    <!-- navbar fixed top -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#11212E">
         <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">
-            <img src="<?= base_url('assets/img/logo.png') ?>" alt="logo" style="width:40px;">
+        <a class="navbar-brand" href="<?=base_url('index.php/Home')?>">
+            <img src="<?= base_url(); ?>assets/img/lo.png" alt="logo" style="width:40px;">
         </a>
 
         <!-- Links -->
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="font-size:18px; color:white"><b>E-LANG</b></a>
-            </li>
-        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-size:18px; color:white"><b>E-LANG</b></a>
+                    </li>
+                </ul>
 
-        <ul class="navbar-nav nav-right">
-            <li class="nav-item items">
-                <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white">
-                    <b>Shahnaz</b>
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="<?= base_url('index.php/Profile') ?>">Edit Profil</a>
-                    <a class="dropdown-item" href="<?= base_url('index.php/Home') ?>">Keluar</a>
-                </div>
-            </li>
-            </li>
-            <li class="nav-item items">
-                <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>
-            </li>
-        </ul>
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item items">
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white">
+                            <b><?php echo $this->session->userdata("nama"); ?></b>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="<?= base_url('index.php/Profile')?>">Edit Profil</a>
+                            <a class="dropdown-item" href="<?= base_url('index.php/Login_controller/logout')?>">Keluar</a>
+                        </div>
+                        </li>
+                    </li>
+                    <li class="nav-item items">
+                        <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>
+                    </li>
+            </ul>
     </nav>
-    <!-- NAV END -->
 
+    <!-- navbar selesai -->
+    
     <!-- SIDE BAR -->
     <?php $this->load->view('templates/sidebar') ?>
 
@@ -92,7 +93,7 @@
 
                 </div>
                 <div class="col-lg-2 col-md-6 col-xs-6" >
-                    <select name="location" class="app-select form-control" required="">
+                    <select name="location" id="lokasi" class="app-select form-control" required="">
                         <option data-display="Lokasi">Lokasi</option>
                         <option value="1">Sukabirus</option>
                         <option value="2">Sukapura</option>
@@ -100,7 +101,7 @@
                     </select>
                 </div>
                 <div class="col-lg-2 col-md-6 col-xs-6">
-                    <select name="property-type" class="app-select form-control" required="">
+                    <select name="property-type" id="kategori" class="app-select form-control" required="">
                         <option data-display="Kategori">Kategori</option>
                         <option value="1">Kartu identitas</option>
                         <option value="2">Tas</option>
@@ -108,14 +109,14 @@
                     </select>
                 </div>
                 <div class="col-lg-2 col-md-6 col-xs-6">
-                    <select name="property-type" class="app-select form-control" required="">
+                    <select name="property-type" id="jenis" class="app-select form-control" required="">
                         <option data-display="Jenis">Jenis</option>
                         <option value="1">Kehilangan</option>
                         <option value="2">Ditemukan</option>
                     </select>
                 </div>
                 <div class="col-lg-2 col-md-6 col-xs-6">
-                    <select name="bedroom" class="app-select form-control" required="">
+                    <select name="bedroom" id="urutkan" class="app-select form-control" required="">
                         <option data-display="Urutkan">Urutkan</option>
                         <option value="1">Tebaru</option>
                         <option value="2">A-Z</option>
@@ -151,8 +152,7 @@
         <?php } ?>
 
     </div>
-
     <!-- RESULT END -->
-</body>
 
+</body>
 </html>
