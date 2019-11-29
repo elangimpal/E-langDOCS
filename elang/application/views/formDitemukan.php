@@ -50,10 +50,10 @@
     <!-- navbar fixed top -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#11212E">
         <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">
-            <img src="<?= base_url('assets/img/logo.png')?>" alt="logo" style="width:40px;">
+        <a class="navbar-brand" href="<?=base_url('index.php/Home')?>">
+            <img src="<?= base_url(); ?>assets/img/lo.png" alt="logo" style="width:40px;">
         </a>
-        
+
         <!-- Links -->
         <ul class="navbar-nav">
                     <li class="nav-item">
@@ -66,19 +66,20 @@
                         <!-- Dropdown -->
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white">
-                            <b>Shahnaz</b>
+                            <b><?php echo $this->session->userdata("nama"); ?></b>
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="<?= base_url('index.php/Profile')?>">Edit Profil</a>
-                            <a class="dropdown-item" href="<?= base_url('index.php/Home')?>">Keluar</a>
+                            <a class="dropdown-item" href="<?= base_url('index.php/Login_controller/logout')?>">Keluar</a>
                         </div>
                         </li>
                     </li>
                     <li class="nav-item items">
-                        <a class="nav-link" href="#" style="color:white"><b>FAQ</b></a>
+                        <a class="nav-link" href="<?= base_url('index.php/Faq') ?>" style="color:white"><b>FAQ</b></a>
                     </li>
             </ul>
     </nav>
+
 
     <!-- navbar selesai -->
     
@@ -101,7 +102,7 @@
                     <div class="col-sm-2"></div>
                     <div class="col-sm-10" style="margin-left:300px">
                     <div class="container p-5 col-10" style="border-radius: 15px; margin-bottom: 50px;background-color: #ffffff !important; box-shadow: 0 .225rem .25rem rgba(0,0,0.1,0.175)!important;">
-                <!-- <?php //echo form_open_multipart('index.php/formDitemukan_controller/insertBarang') ?> -->
+                
                 <form method='post' action='<?php echo base_url('index.php/formDitemukan_controller/insertBarang'); ?>' enctype='multipart/form-data'>
                     <div class="row">
                         <div class="col-25 media">
@@ -111,7 +112,7 @@
                             <label for="imgInp">Gambar</label>
                             <p>Format gambar .jpg .jpeg dan ukuran minimum 300 x 300px (Untuk gambar optimal ukuran 700 x 700px)</p>
                             <!-- <input type="file" id="imgInp" multiple="multiple" hidden="hidden"/> -->
-                            <input type="file" class="files" id="imgInp"  name="files[]" multiple hidden />
+                            <input type="file" class="files" id="imgInp"  name="files[]" multiple hidden required/>
                             <button type="button" id="custom-button">Unggah</button>
                             
                             <span id="custom-text">Pilih Gambar Produk</span>
@@ -123,7 +124,7 @@
                             <label for="namaBarang">Nama Barang</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="namaBarang" name="namaBarang" placeholder="Masukkan nama barang">
+                            <input type="text" id="namaBarang" name="namaBarang" placeholder="Masukkan nama barang" required>
                         </div>
                     </div>
                     <div class="row">
@@ -131,7 +132,7 @@
                             <label for="lokasi">Lokasi</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="lokasi" name="lokasi" placeholder="Masukkan lokasi kehilangan barang">
+                            <input type="text" id="lokasi" name="lokasi" placeholder="Masukkan lokasi kehilangan barang" required>
                         </div>
                     </div>
                     <div class="row">
@@ -139,7 +140,7 @@
                             <label for="tanggal">Tanggal</label>
                         </div>
                         <div class="col-75">
-                            <input type="date" id="tanggal" name="tanggal">
+                            <input type="date" id="tanggal" name="tanggal" required>
                         </div>
                     </div>
                     <div class="row">
@@ -147,7 +148,7 @@
                             <label for="desc">Deskripsi</label>
                         </div>
                         <div class="col-75">
-                            <textarea id="desc" name="desc" placeholder="Berikan informasi dengan jelas dan sedetail mungkin mengenai barang anda yang hilang." style="height:200px"></textarea>
+                            <textarea id="desc" name="desc" placeholder="Berikan informasi dengan jelas dan sedetail mungkin mengenai barang anda yang hilang." style="height:200px" required></textarea>
                         </div>
                     </div>
 
@@ -166,23 +167,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div id="myDIV" class="header col-25">
+                        <div class=" col-25">
                             <label for="ciriciri">Ciri-ciri</label>
                         </div>
-                        <div class="col-50">
-                            <input name="ciri" type="text" id="myInput" placeholder="Contoh: warna, merek, ukuran.">
-                        </div>
-                        <div class="col-25">
-                            <span onclick="newElement()" class="addBtn">+ Tambahkan ciri-ciri </span>
-                        </div>
-
-                    </div>
-                    <div class="row ">
-                        <div class="col-25">
-                            <label></label>
-                        </div>
-                        <div class="col-25">
-                            <div style="margin-left: 10px !important; padding-left: 10px !important;"><ul id="myUL"></ul></div>
+                        <div class="col-75">
+                            <input name="ciri" type="text" id="myInput" placeholder="Contoh: warna, merek, ukuran." required>
                         </div>
 
                     </div>
@@ -191,10 +180,10 @@
                             <label for="ciriKhusus">Ciri Khusus</label>
                         </div>
                         <div class="col-50">
-                            <input type="text" id="ciriKhusus" name="ciriKhusus" placeholder="Contoh: Nomor kartu.">
+                            <input type="text" id="ciriKhusus" name="ciriKhusus" placeholder="Contoh: Nomor kartu." required>
                         </div>
                         <div class="col-25">
-                            <p style="padding-left:10px !important;">*Mohon berikan ciri khusus yang unik</p>
+                            <p style="font-size:14px;color:red;padding-left:10px !important;">*Mohon berikan ciri khusus yang unik untuk validasi barang</p>
                         </div>
                     </div>
                     <div class="row">
@@ -202,7 +191,7 @@
                             <label for="petunjuk">Petunjuk</label>
                         </div>
                         <div class="col-50">
-                            <input type="text" id="petunjuk" name="petunjuk" placeholder="Masukkan petunjuk dari ciri khusus.">
+                            <input type="text" id="petunjuk" name="petunjuk" placeholder="Masukkan petunjuk dari ciri khusus." required>
                         </div>
                     </div>
                     <div class="row">

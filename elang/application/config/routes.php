@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'Home_controller';
 $route['Home'] = 'Home_controller';
+$route['Faq'] = 'Faq_controller';
 $route['Dashboard'] = 'Dashboard_controller';
 $route['Notifikasi'] = 'Notifikasi_controller';
 $route['BarangHilang'] = 'Barangh_controller';

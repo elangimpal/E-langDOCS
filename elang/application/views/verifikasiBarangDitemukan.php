@@ -1,34 +1,5 @@
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  	<title>verifikasi Barang Ditemukan</title>
-
-  	<!-- Favicon -->
-  	<link href="img/favicon.ico" rel="shortcut icon"/>
-
-  	<!-- Google Fonts -->
-  	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
-
-  	<!-- Stylesheets -->
-  	<link rel="stylesheet" href="assets/bootstrap.min.css">
-  	<link rel="stylesheet" href="assets/font-awesome.min.css">
-  	<link rel="stylesheet" href="assets/owl.carousel.css">
-
-  	<!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-      <!-- jQuery library -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-      <!-- Popper JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-      <!-- Latest compiled JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  </head>
+<!-- manggil navbar -->
+<?php $this->load->view('templates/navbar')?>
 
   <style>
     .i-size{

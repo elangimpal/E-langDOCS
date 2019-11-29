@@ -48,27 +48,27 @@ class formDitemukan_controller extends CI_Controller {
 					$namafile = $foto['file_name'];
 					$data[$i] = array(
 								'username' => $user, //harusnya diisi session user login
-								'nama_barang' => $this->input->post('namaBarang'),
-								'lokasi' => $this->input->post('lokasi'),
-								'tanggal' => $this->input->post('tanggal'),
-								'deskripsi' => $this->input->post('desc'),
+								'nama_barang' => $this->input->post('namaBarang', 'required'),
+								'lokasi' => $this->input->post('lokasi', 'required'),
+								'tanggal' => $this->input->post('tanggal','required'),
+								'deskripsi' => $this->input->post('desc','required'),
 								'kategori' => $this->input->post('kategori'),
-								'ciri-ciri' => $this->input->post('ciri'),
-								'ciri_khusus' => $this->input->post('ciriKhusus'),
-								'petunjuk' => $this->input->post('petunjuk'),
+								'ciri-ciri' => $this->input->post('ciri','required'),
+								'ciri_khusus' => $this->input->post('ciriKhusus','required'),
+								'petunjuk' => $this->input->post('petunjuk','required'),
 								'foto' => $namafile,
 								'status_barang' => 0,
 								'jenis' => 1
 					);
                 }else{
 					// echo "GAGAL".$_FILES['file']['name'];
-					echo $this->upload->display_errors();
+					
 				}
 			}else {
 				// Flash message foto kosong
-				echo "GAMBAR KOSONG";
+				// echo "GAMBAR KOSONG";
 				
-				echo $error;
+				// echo $error;
 			}
 		} 
 		$this->inputModel->inputBarang('barang',$data);
